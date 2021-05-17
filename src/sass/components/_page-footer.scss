@@ -1,15 +1,72 @@
-.footer-button {
-    display: block;
-    text-align: center;
+.contact__title {
+  font-family: Caveat Brush;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.81;
+  text-align: center;
 
+  color: $primary-text-color;
 }
 
+.contact__text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 3.61;
+  text-align: center;
+
+  color: $primary-text-color;
+}
+
+.footer__form {
+  width: 430px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.footer__form-field {
+}
+
+.footer-button {
+  display: block;
+  text-align: center;
+  margin-bottom: 82px;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  height: 19px;
+  margin-bottom: 35px;
+}
 
 .footer__item {
-    display: inline-flex;
+  display: inline-flex;
+  align-items: center;
 
-    &:not(:last-child) {
-        margin-right: 9px;
-    }
+  &:not(:last-child) {
+    margin-right: 9px;
+  }
+  &:hover,
+  &:focus {
+    fill: $accent-title-btn-color;
+  }
 }
 
+.footer__nav {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 21px;
+  align-items: baseline;
+}
+
+.footer__tel,
+.footer__location {
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: $primary-text-color;
+}
