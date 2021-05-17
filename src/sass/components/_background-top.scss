@@ -4,7 +4,7 @@
         background-image: url(../images/about_us/mobile/cupcake_box-min.png),
                           url(../images/header/mobile/pic_donuts-min.png),
                           url(../images/bg/mobille/bg@1x.png);
-        background-size:   290px, 130px, 332px;
+        background-size:   290px, 130px, cover;
         background-position: top 360px left 15px, top left, top;
         background-repeat:  no-repeat, no-repeat, no-repeat;
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) { 
