@@ -1,0 +1,15 @@
+.footer-button {
+    display: block;
+    text-align: center;
+
+}
+
+
+.footer__item {
+    display: inline-flex;
+
+    &:not(:last-child) {
+        margin-right: 9px;
+    }
+}
+
