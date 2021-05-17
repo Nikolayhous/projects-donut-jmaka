@@ -11,19 +11,17 @@
 
       <form class="form">
         <div class="form__wrap">
-          <b class="form__banner"
-            >Apply your personal info <br />
-            for registration</b
-          >
+          <p class="form__banner"></p>
+            Apply your personal info for registration
+          </p>
           <div class="form__field">
+            
             <input
               class="form__input"
               type="text"
               name="user-name"
               placeholder="Your name"
               pattern="^[a-zA-Z\s]+$"
-              required
-              autocomplete="off"
             />
             <input
               class="form__input"
@@ -31,15 +29,8 @@
               name="user-phone"
               placeholder="Phone number"
               pattern="[0-9]{10}"
-              required
             />
-            <input
-              class="form__input"
-              type="email"
-              name="user-email"
-              placeholder="Email"
-              required
-            />
+            <input class="form__input" type="email" name="user-email" placeholder="Email" />
           </div>
         </div>
         <button class="form__button button" type="submit">Register</button>
