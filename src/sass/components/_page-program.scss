@@ -455,7 +455,8 @@
 .program_grid-item {
     position: absolute;
     bottom: 40px;
-    left: 15px;
+    left: 10px;
+    right: 10px;
 }
 
 .program__grid-title {
@@ -494,12 +495,6 @@
         font-size: 16px;
         line-height: 1.25;
     }
-}
-
-.program_grid-item {
-        position: absolute;
-        bottom: 40px;
-        left: 15px;
 }
 
 
