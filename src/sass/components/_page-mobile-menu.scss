@@ -11,6 +11,7 @@
 
     @include for-size(phone-only) {
         padding-top: 15px;
+
         }
 
     &.is-open {
@@ -20,6 +21,7 @@
     }
     @include for-size(tablet-up) {
         padding-top: 25px;
+        margin-left: 508px;
     }
         
     @include for-size(desktop-up) {

@@ -1,0 +1,45 @@
+.background-bottom {
+
+    @include for-size (phone-only) {
+        background-image: url(../images/footer/mobile/Wheat_flour-min.png),
+                          url(../images/bg_bottom/mobille/bg@1x.png);
+        background-size:   113px,  contain;
+        background-position:  bottom right, center;
+        background-repeat:  no-repeat, no-repeat;
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) { 
+            background-image: url(../images/footer/mobile/Wheat_flour@2x-min.png),
+                              url(../images/bg_bottom/mobille/bg@2x.png);
+            }
+        }
+        @include for-size (tablet-up) {
+            background-image: url(../images/registration/tablet/donut@1x.png),
+                              url(../images/registration/tablet/confetti-min.png),
+                              url(../images/footer/tablet/wheat_flour-min.png),
+                              url(../images/bg_bottom/tablet/bg@1x.png);
+            background-size:   196px, 191px, 207px, cover;
+            background-position: top 578px left 17px, top 651px right, bottom right, center;
+            background-repeat:  no-repeat, no-repeat, no-repeat, no-repeat;
+            @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) { 
+                background-image: url(../images/registration/tablet/donut@2x.png),
+                                  url(../images/registration/tablet/confetti@2x-min.png),
+                                  url(../images/footer/tablet/wheat_flour@2x-min.png),
+                                  url(../images/bg_bottom/tablet/bg@2x.png);
+                }
+            }
+    
+            @include for-size (desktop-up) {
+                background-image: url(../images/registration/desktop/donut-min.png),
+                                  url(../images/registration/desktop/confetti-min.png),
+                                  url(../images/footer/desktop/Wheat_flour-min.png),
+                                  url(../images/bg_bottom/desktop/bg@1x.png);
+                background-size:  196px, 300px, 362px, cover;
+                background-position: top 686px left 69px, top 690px right, bottom right, center;
+                background-repeat: no-repeat, no-repeat, no-repeat, repeat-x;
+                @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) { 
+                    background-image: url(../images/registration/desktop/donut@2x-min.png),
+                                      url(../images/registration/desktop/confetti@2x-min.png),
+                                      url(../images/footer/desktop/Wheat_flour@2x-min.png),
+                                      url(../images/bg_bottom/desktop/bg@2x.png);
+                    }
+                }
+    }
