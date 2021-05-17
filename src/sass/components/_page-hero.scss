@@ -1,0 +1,57 @@
+.hero {
+  // margin: 0;
+  @include for-size(phone-only) {
+    padding: 0 33px;
+  }
+  @include for-size(tablet-only) {
+    padding: 0 53px;
+  }
+  @include for-size(desktop-up) {
+    padding: 0 214px;
+  }
+  @include for-size(phone-only) {
+    text-align: center;
+  }
+  &__title {
+    font-family: 'Caveat Brush', sans-serif;
+    font-size: 30px;
+    line-height: 1.26;
+    color: $primary-text-color;
+    @include for-size(tablet-only) {
+      margin-bottom: 3px;
+    }
+    @include for-size(desktop-up) {
+      margin-bottom: 15px;
+      font-size: 64px;
+      line-height: 1.01;
+    }
+  }
+  &__note {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $primary-text-color;
+    @include for-size(phone-only) {
+      margin-bottom: 37px;
+    }
+    @include for-size(tablet-only) {
+      margin-bottom: 26px;
+    }
+
+    @include for-size(desktop-up) {
+      font-size: 24px;
+      line-height: 1.2;
+      margin-bottom: 30px;
+    }
+  }
+}
+.social-icons {
+  margin-top: 45px;
+  &__list {
+    @include for-size(phone-only) {
+      align-items: center;
+      margin-bottom: 284px;
+    }
+  }
+}

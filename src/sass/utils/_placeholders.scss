@@ -1,0 +1,34 @@
+.social-icons {
+  &__list {
+    display: inline-flex;
+  }
+
+  &__twitter {
+    width: 19px;
+    height: 15px;
+    margin-right: 9px;
+    @include for-size(desktop-up) {
+      width: 24px;
+      height: 19px;
+      margin-right: 12px;
+    }
+  }
+  &__instagram {
+    width: 15px;
+    height: 15px;
+    margin-right: 9px;
+    @include for-size(desktop-up) {
+      width: 19px;
+      height: 19px;
+      margin-right: 12px;
+    }
+  }
+  &__facebook {
+    width: 8px;
+    height: 15px;
+    @include for-size(desktop-up) {
+      width: 10px;
+      height: 19px;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+<section id="register">
+  <h2 class="registration__title--tablet-desktop section-title">Registration</h2>
+  <div class="container registration">
+    <div class="registration__thumb">
+      <h2 class="registration__title section-title">Registration</h2>
+
+      <div class="registration__date--wrap">
+        <span class="registration__date">May 23, 11:00 New York</span>
+        <span class="registration__value">$ 699</span>
+      </div>
+
+      <form class="form">
+        <div class="form__wrap">
+          <b class="form__banner"
+            >Apply your personal info <br />
+            for registration</b
+          >
+          <div class="form__field">
+            <input
+              class="form__input"
+              type="text"
+              name="user-name"
+              placeholder="Your name"
+              pattern="^[a-zA-Z\s]+$"
+              required
+              autocomplete="off"
+            />
+            <input
+              class="form__input"
+              type="tel"
+              name="user-phone"
+              placeholder="Phone number"
+              pattern="[0-9]{10}"
+              required
+            />
+            <input
+              class="form__input"
+              type="email"
+              name="user-email"
+              placeholder="Email"
+              required
+            />
+          </div>
+        </div>
+        <button class="form__button button" type="submit">Register</button>
+      </form>
+    </div>
+  </div>
+</section>

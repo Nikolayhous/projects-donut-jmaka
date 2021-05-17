@@ -1,0 +1,63 @@
+.about-us {
+  width: 290px;
+  text-align: left;
+  @include for-size(tablet-up) {
+    width: 336px;
+    margin-left: 351px;
+  }
+  @include for-size(desktop-up) {
+    width: 392px;
+    margin-left: 644px;
+    margin-bottom: 39px;
+  }
+
+  &__title {
+    font-family: 'Caveat Brush', sans-serif;
+    font-size: 24px;
+    line-height: 2.71;
+    text-align: center;
+    color: $primary-text-color;
+    @include for-size(desktop-only) {
+      padding-top: 67px;
+    }
+
+    @include for-size(desktop-up) {
+      font-size: 36px;
+      line-height: 1.81;
+    }
+  }
+  &__article {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $primary-text-color;
+    @include for-size(desktop-up) {
+      font-size: 18px;
+      line-height: 1.22;
+    }
+  }
+}
+.about-section {
+  @include for-size(tablet-up) {
+    display: flex;
+  }
+}
+@include for-size(tablet-only) {
+  #more {
+    display: none;
+  }
+}
+.btn-read {
+  background-color: transparent;
+  color: $bg-button-color;
+  outline: none;
+  border: none;
+  font-family: 'Caveat Brush', sans-serif;
+  font-size: 18px;
+  line-height: 3.61;
+  text-align: center;
+  padding: 0;
+  @include for-size(desktop-up) {
+    display: none;
+  }
+}

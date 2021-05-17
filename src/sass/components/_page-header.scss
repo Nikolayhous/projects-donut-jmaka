@@ -1,0 +1,105 @@
+
+.general {
+    @include for-size(tablet-only) {
+    display: flex;
+   
+    }
+    @include for-size(phone-only) {
+       
+    }
+}
+
+.header__nav {
+    @include for-size(tablet-up ) {
+        display: flex;
+      }
+
+}
+
+.header__link--logo {
+    @include for-size(phone-only) {
+        display: block;
+        padding-top: 7px;
+        padding-left: 109px;
+        margin-bottom: 33px;
+    }
+    @include for-size(tablet-up ) {
+        padding-top: 27px;
+        padding-left: 53px;
+        margin-bottom: 10px;
+    }
+
+    @include for-size(desktop-up) {
+    padding-top: 31px;
+    padding-left: 214px;
+    margin-right: 38px;
+    margin-bottom: 51px;
+    }
+    &:hover,
+    &:focus {
+        fill: $nav-menu-link;
+    }
+}
+
+.header__logo {
+
+    @include for-size(tablet-only) {
+        width: 96px;
+        height: 43px;
+
+    }
+    @include for-size(desktop-up) {
+        width: 158px;
+        height: 71px;
+    }
+}
+
+.header__list--menu {
+    @include for-size(tablet-only) {
+        display: none;
+      }
+}
+
+.header__list {
+    @include for-size(desktop-up) {
+        display: flex;
+        padding-top: 52px;
+      }
+}
+
+.header__item {
+    &:not(:last-child) {
+        margin-right: 20px;
+    }
+    
+}
+
+.header__link {
+    font-size: 18px;
+    line-height: 1.22;
+    text-decoration: none;
+    color: $primary-text-color;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+
+    @include for-size(tablet-only) {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.20;
+    }
+    
+    &:hover,
+    &:focus {
+        color: $nav-menu-link;
+    }
+}
+
+.header__images {
+    @include for-size(desktop-up) {
+        width: 793px;
+        height: 831px;
+    }
+}
+
+

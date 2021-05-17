@@ -1,0 +1,48 @@
+.background-top {
+
+    @include for-size (phone-only) {
+        background-image: url(../images/about_us/mobile/cupcake_box-min.png),
+                          url(../images/header/mobile/pic_donuts-min.png),
+                          url(../images/bg/mobille/bg@1x.png);
+        background-size:   290px, 130px, cover;
+        background-position: top 308px left 15px, top left, center;
+        background-repeat:  no-repeat, no-repeat, repeat-x;
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) { 
+            background-image: url(../images/about_us/mobile/cupcake_box@2x-min.png),
+                              url(../images/header/mobile/pic_donuts@2x-min.png),
+                              url(../images/bg/mobille/bg@2x.png);
+            }
+        }
+
+
+    @include for-size (tablet-up) {
+        background-image: url(../images/about_us/tablet/cupcake_box-min.png),
+                          url(../images/header/tablet/pic_donuts-min.png),
+                          url(../images/bg/tablet/bg@1x.png);
+        background-size:   330px, 378px, cover;
+        background-position: top 371px left 11px, top right 137px, center;
+        background-repeat:  no-repeat, no-repeat, repeat-x;
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) { 
+            background-image: url(../images/about_us/tablet/cupcake_box@2x-min.png),
+                              url(../images/header/tablet/pic_donuts@2x-min.png),
+                              url(../images/bg/tablet/bg@2x.png);
+            }
+        }
+
+        @include for-size (desktop-up) {
+            background-image: url(../images/about_us/desktop/cupcake_box-min.png),
+                              url(../images/header/desktop/spoon-min.png),
+                              url(../images/header/desktop/pic_donuts-min.png),
+                              url(../images/bg/desktop/bg@1x.png);
+            background-size:  512px, 178px, 793px, cover;
+            background-position: top 547px left 71px, top 166px left, top right, center;
+            background-repeat: no-repeat, no-repeat, no-repeat, repeat-x;
+            @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) { 
+                background-image: url(../images/about_us/desktop/cupcake_box@2x-min.png),
+                                  url(../images/header/desktop/spoon@2x-min.png),
+                                  url(../images/header/desktop/pic_donuts@2x-min.png),
+                                  url(../images/bg/desktop/bg@2x.png);
+                }
+            }
+}
+

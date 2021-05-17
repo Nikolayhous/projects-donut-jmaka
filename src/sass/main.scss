@@ -4,4 +4,19 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
-@import './example';
+
+@import './utils/mixins';
+@import './utils/placeholders';
+@import './utils/variables';
+@import './components/background-top';
+@import './components/global-style';
+@import './components/page-header';
+@import './components/page-mobile-menu';
+@import './components/page-hero';
+@import './components/page-about';
+@import './components/page-program';
+@import './components/page_reviews';
+@import './components/page-registration';
+@import './components/page-contact';
+@import './components/page-footer';
+

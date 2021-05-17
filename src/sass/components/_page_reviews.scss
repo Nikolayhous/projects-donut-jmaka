@@ -1,0 +1,50 @@
+.reviews-section__title {
+  line-height: 2.7;
+}
+
+.reviews-section__user-photo {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: aqua;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 6px;
+}
+
+.rate-list {
+  display: flex;
+  justify-content: center;
+  fill: $carousel-color;
+}
+
+.reviews-section__user-name {
+  display: block;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 4.64;
+  text-align: center;
+  color: $primary-text-color;
+}
+.reviews-section__text {
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  margin-bottom: 30px;
+  color: $primary-text-color;
+}
+.reviews-section__counter {
+  display: block;
+  line-height: 1.21;
+  text-align: center;
+  color: $carousel-color;
+  margin-bottom: 30px;
+}
+//   &::before {
+//     display: block;
+//     content: '';
+//     background-image: url(../images/sprite.svg#icon-Star-5);
+//     width: 20px;
+//     height: 20px;
+//     fill: blue;
+//   }
