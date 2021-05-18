@@ -8,6 +8,7 @@
     height: 18px;
     background-color: transparent;
     border: none;
+    outline: none;
 
     @include for-size(phone-only) {
         padding-top: 15px;
