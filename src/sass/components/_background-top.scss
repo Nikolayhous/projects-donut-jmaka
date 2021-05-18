@@ -13,13 +13,13 @@
 
 
   @include for-size(tablet-up) {
-    background-image: url(../images/about_us/tablet/cupcake_box-min.png),
+    background-image: url(../images/about_us/desktop/cupcake_box-min.png),
       url(../images/header/tablet/pic_donuts-min.png), url(../images/bg/tablet/bg@1x.png);
     background-size: 330px, 378px, contain;
     background-position: top 371px left 11px, top right 137px, top;
     background-repeat: no-repeat, no-repeat, repeat-x;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/about_us/tablet/cupcake_box@2x-min.png),
+      background-image: url(../images/about_us/desktop/cupcake_box@2x-min.png),
         url(../images/header/tablet/pic_donuts@2x-min.png), url(../images/bg/tablet/bg@2x.png);
     }
   }
