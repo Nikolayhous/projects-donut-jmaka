@@ -48,10 +48,19 @@
 }
 .social-icons {
   margin-top: 45px;
-  &__list {
-    @include for-size(phone-only) {
-      align-items: center;
-      margin-bottom: 284px;
-    }
+  @include for-size(desktop-up) {
+    margin-bottom: 123px;
+  }
+  @include for-size(tablet-only) {
+    margin-bottom: 80px;
+  }
+
+  @include for-size(phone-only) {
+    align-items: center;
+    margin-bottom: 284px;
+  }
+  &__link:hover,
+  &__link:focus {
+    fill: $accent-title-btn-color;
   }
 }
