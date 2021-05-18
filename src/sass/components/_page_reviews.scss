@@ -1,6 +1,15 @@
 .reviews-section__title {
   line-height: 2.7;
+  // @include for-size(tablet-up) {
+  //   margin-bottom: 10px;
+  // }
+  // @include for-size(desktop-up) {
+  //   margin-bottom: 68px;
+  // }
 }
+
+// .reviews-section__list {
+// }
 
 .reviews-section__user-photo {
   width: 110px;
@@ -16,35 +25,63 @@
   display: flex;
   justify-content: center;
   fill: $carousel-color;
+
+  & .rate-list__item--border-color {
+    fill: none;
+    stroke: $carousel-color;
+  }
+}
+.rate-list__item:not(:last-child) {
+  margin-right: 4px;
 }
 
 .reviews-section__user-name {
   display: block;
   font-style: italic;
   font-weight: 500;
-  line-height: 4.64;
   text-align: center;
   color: $primary-text-color;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .reviews-section__text {
   font-size: 16px;
   line-height: 1.25;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   color: $primary-text-color;
+
 }
-.reviews-section__counter {
-  display: block;
+// Slider
+
+// .slick-track {
+//   display: flex;
+// }
+
+.slider__counter {
+  display: flex;
+  align-items: center;
   line-height: 1.21;
-  text-align: center;
   color: $carousel-color;
   margin-bottom: 30px;
+  justify-content: center;
+  
+  @include for-size(desktop-up) {
+    margin-bottom: 68px;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    width: 30px;
+    height: 1px;
+    border-radius: 1px;
+    background-color: $carousel-color;
+  }
+  &::before {
+    margin-right: 12px;
+  }
+  &::after {
+    margin-left: 12px;
+  }
 }
-//   &::before {
-//     display: block;
-//     content: '';
-//     background-image: url(../images/sprite.svg#icon-Star-5);
-//     width: 20px;
-//     height: 20px;
-//     fill: blue;
-//   }
