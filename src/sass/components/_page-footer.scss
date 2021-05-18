@@ -203,3 +203,13 @@
 .footer__link:focus {
   fill: $accent-title-btn-color;
 }
+
+.footer__tel:hover .icon-tel,
+.footer__tel:focus .icon-tel {
+  fill: $accent-title-btn-color;
+}
+
+.footer__location:hover .icon-location,
+.footer__location:focus .icon-location {
+  fill: $accent-title-btn-color;
+}
