@@ -41,7 +41,7 @@
     
     
 }
-
+.program__limited,
 .program__text {
     display: inline-block;
     color: $primary-text-color;
@@ -51,6 +51,7 @@
         max-width: 290px;
         font-size: 16px;
         line-height: 1.25;
+    
     }
 
     @include for-size(tablet-up){
@@ -67,6 +68,18 @@
         line-height: 1.22;
     }
 }
+
+.desktop-text {
+    @include for-size (phone-only){
+        display: none;
+    }
+
+    @include for-size (tablet-only){
+        display: none;
+    }
+}
+
+
 
 .program__list {
     list-style: none;
@@ -119,33 +132,7 @@
         }
         
    }
-}   
-
-.program__checker {
-    opacity: 0;
-    position: absolute;
-
-      
-    & ~ .program__btn::after {
-        content: 'Less';
-        
-    }
-    
-    &:checked ~ .program__btn::after {
-        content: 'Read more';
-    }
-   
-    &:checked ~ .program__limited {
-       display: none;
-    }
-
-    @include for-size (desktop-up){
-        display: none;
-    }
-}
-
-
-
+} 
 
 .program__btn {
     @include for-size (phone-up){
@@ -156,6 +143,7 @@
     line-height: 3.61;
     color: $carousel-color;
     text-align: start;
+    
     // margin-top: 28px;
 
     border: none;
@@ -166,7 +154,39 @@
         display: none;
     }
 }
+
+ 
+
+.program__checker {
+    opacity: 0;
+    position: absolute;
+
+    & ~ .program__limited {
+       display: none;
+     }
+
+    
+     &:checked ~ .program__limited {
+        display: inherit;
+      } 
+      
+    & ~ .program__btn::before {
+        content: "Read more";
+    }
+        
+        
+    &:checked ~ .program__btn::before {
+        content: "Less";
+    }
    
+   
+
+    @include for-size (desktop-up){
+        display: none;
+    }
+}
+
+  
 
 
 .program__grid {
@@ -192,7 +212,6 @@
     @include for-size(desktop-up){
         position: absolute;
         right: 212px;
-        top: -20px;
         width: 392px;
         height: 520px;
         margin-top: 0;

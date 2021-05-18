@@ -64,3 +64,11 @@
     fill: $accent-title-btn-color;
   }
 }
+
+.animate__animated.animate__zoomIn {
+  animation-duration: 2000ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-delay: 300ms;
+  animation-direction: alternate;
+  animation-iteration-count: 3;
+}
