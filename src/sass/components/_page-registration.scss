@@ -10,7 +10,6 @@
   }
   @include for-size(tablet-up) {
     border-radius: 150px;
-    width: 634px;
   }
   @include for-size(desktop-up) {
     width: 822px;
@@ -128,6 +127,9 @@
   border-top: none;
   border-bottom: 1px solid $input-border-color;
   outline: none;
+  @include for-size(phone-only) {
+    width: 265px;
+    }
 }
 
 .form__input:invalid:not(:focus) {
