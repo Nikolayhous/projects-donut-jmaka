@@ -1,42 +1,64 @@
-<div class="container">
+<footer>
+
+    <div class="container">
+        <div class="footer__contact">
+            <h2 class="contact__title">Contact</h2>
+            <p class="contact__text">We will answer any question!</p>
+            <form class="footer__form" autocomplete="off">
+                <div class="footer__form-field">
+                    <input class="form__input" type="email" name="mail" id="mail" placeholder="Email" />
+                </div>
+                <div class="footer__form-field">
+                    <input class="form__input" type="comment" name="comment" id="comment"
+                        placeholder="Type your question" />
+                </div>
+            </form>
+        </div>
+
+   
     <button class="form__button button footer-button" type="submit">Send</button>
     <ul class="footer__social">
         <li class="footer__item" >
             <a href="arial-label">
-                <svg class="footer__icon" width="19" heigth="15">
+                <svg class="footer__icon" width="24" heigth="19">
                     <use href="./images/sprite.svg#icon-twitter"></use>
                 </svg>
             </a></li>
         <li class="footer__item" >
             <a href="arial-label">
-                <svg class="footer__icon" width="15" heigth="15">
+                <svg class="footer__icon" width="19" heigth="19">
                     <use href="./images/sprite.svg#icon-instagram" ></use>
                 </svg>
             </a></li>
         <li class="footer__item">
             <a href="arial-label">
-                <svg class="footer__icon" width="8" heigth="15">
+                <svg class="footer__icon" width="10" heigth="19">
                     <use href="./images/sprite.svg#icon-facebook" ></use>
                 </svg>
             </a>
         </li>
     </ul>
     <div>
-    <ul>
+    <ul class="footer__nav">
         <li>
             <svg width="13" height="13">
                 <use href="./images/sprite.svg#icon-Group" ></use>
             </svg>
-            <a href="tel:9102228855">(910)222-8855</a>
+            <a href="tel:9102228855" class="footer__tel">(910)222-8855</a>
         </li>
         <li>
             <svg width="11" height="14">
                 <use href="./images/sprite.svg#icon-location"></use>
             </svg>
-            <a href="https://goo.gl/maps/WhZ3jbcanFxCnqYP8">
+            <a href="https://goo.gl/maps/WhZ3jbcanFxCnqYP8"
+            target="_blank"
+                  rel="noopener noreferrer"
+                  class="footer__location"
+            >
                 New York
             </a>
         </li>
     </ul>
     </div>
-</div>
+  </div>
+</footer>
