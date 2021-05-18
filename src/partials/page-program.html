@@ -16,12 +16,15 @@
         <li class="program__tail">All products are included in the price</li>
       </ul>
      
-      <span clas="program__more btn-read" id="more"><article class="program__text"> Come with your dear people and friends and you will spend an unforgettable time and will
-        become a real professional in donuts cooking!</article>
-      <br>
-        </span>
+      <input type="checkbox" class="program__checker" id="program__checker" />
+      <div class="program__limited">
+        <p class="program__text"> 
+        Come with your dear people and friends and you will spend an unforgettable time and will
+        become a real professional in donuts cooking!
+        </p>
         
-      <button class="program__more" type="button" id="read"  onclick="read()">Read more</button> 
+     </div>
+        <label for="program__checker" class="program__btn"></label>
       
     <div class="program__container">
       <ul class="program__grid">
@@ -111,24 +114,3 @@
   </div>
 </section>
 
-<script type="text/javascript">
-  var i=0;
-  function read(){
-      if(!i){
-         
-          document.getElementById("more").style.
-              display = "inline";
-          document.getElementById("read").innerHTML="Less"
-            i=1;
-      }
-      else{
-          
-          document.getElementById("more").style.
-              display = "none";
-          document.getElementById("read").innerHTML = "Read more"
-          i=0;
-      }
-
-  }
-  </script>
-  
