@@ -2,38 +2,117 @@
   font-family: Caveat Brush;
   font-style: normal;
   font-weight: 400;
-  font-size: 36px;
-  line-height: 1.81;
+
   text-align: center;
   margin-top: 77px;
   color: $primary-text-color;
+
+  @include for-size(phone-up) {
+    margin-top: 27px;
+    font-size: 24px;
+    line-height: 2.71;
+  }
+  @include for-size(tablet-up) {
+    margin-top: 51px;
+    font-size: 24px;
+    line-height: 2.71;
+  }
+  @include for-size(desktop-up) {
+    margin-top: 77px;
+    font-size: 36px;
+    line-height: 1.81;
+  }
 }
 
 .contact__text {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 3.61;
+
   text-align: center;
 
   color: $primary-text-color;
+
+  @include for-size(phone-up) {
+    font-size: 16px;
+    line-height: 4.06;
+  }
+  @include for-size(tablet-up) {
+    font-size: 16px;
+    line-height: 4.06;
+  }
+  @include for-size(desktop-up) {
+    font-size: 18px;
+    line-height: 3.61;
+  }
 }
 
 .footer__form {
-  width: 430px;
   display: flex;
   flex-direction: column;
   margin: auto;
+
+  @include for-size(phone-up) {
+    width: 265px;
+  }
+  @include for-size(tablet-up) {
+    width: 410px;
+  }
+  @include for-size(desktop-up) {
+    width: 430px;
+  }
 }
 
-.footer__form-field {
+.footer-form__input {
+  width: 100%;
+  height: 22px;
+  padding: 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(46, 37, 32, 1);
+  background-color: transparent;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid $input-border-color;
+  outline: none;
+
+  &:first-child {
+    margin-bottom: 15px;
+  }
+
+  &:invalid:not(:focus) {
+    border: 1px solid #f00;
+  }
+  &::placeholder {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $placeholder-color;
+  }
 }
 
 .footer-button {
   display: block;
   text-align: center;
-  margin-bottom: 82px;
+
+  @include for-size(phone-up) {
+    margin-bottom: 47px;
+    margin-top: 37px;
+  }
+  @include for-size(tablet-up) {
+    margin-bottom: 50px;
+    margin-top: 27px;
+  }
+  @include for-size(desktop-up) {
+    margin-bottom: 82px;
+    margin-top: 27px;
+  }
 }
 
 .footer__social {
@@ -50,17 +129,61 @@
   &:not(:last-child) {
     margin-right: 9px;
   }
-  &:hover,
-  &:focus {
-    fill: $accent-title-btn-color;
+}
+
+.footer-icons__link:hover,
+.footer-icons__link:focus {
+  fill: $accent-title-btn-color;
+}
+
+.footer__icon-twitter {
+  @include for-size(phone-up) {
+    width: 18.95px;
+    height: 15px;
+  }
+  @include for-size(desktop-up) {
+    height: 19px;
+    width: 24px;
   }
 }
 
-.footer__nav {
+.footer__icon-instagram {
+  @include for-size(phone-up) {
+    height: 15px;
+    width: 15px;
+  }
+  @include for-size(desktop-up) {
+    height: 19px;
+    width: 19px;
+  }
+}
+
+.footer__icon-facebook {
+  @include for-size(phone-up) {
+    height: 15px;
+    width: 8.11px;
+  }
+  @include for-size(desktop-up) {
+    width: 10.27px;
+    height: 19px;
+  }
+}
+
+.footer-nav {
   display: flex;
-  justify-content: space-around;
+
   padding-bottom: 21px;
   align-items: baseline;
+
+  @include for-size(phone-up) {
+    justify-content: space-around;
+  }
+  @include for-size(tablet-up) {
+    justify-content: space-between;
+  }
+  @include for-size(desktop-up) {
+    justify-content: space-around;
+  }
 }
 
 .footer__tel,
@@ -69,4 +192,14 @@
   line-height: 1.25;
 
   color: $primary-text-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-title-btn-color;
+  }
+}
+
+.footer__link:hover,
+.footer__link:focus {
+  fill: $accent-title-btn-color;
 }
