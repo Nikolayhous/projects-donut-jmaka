@@ -1,3 +1,15 @@
+.footer__container {
+      @include for-size(phone-plus-only) {
+        width: 480px;
+    }
+    @include for-size(tablet-up) {
+        width: 665px;
+  }
+    @include for-size(desktop-up) {
+        width: 854px;
+}
+}
+
 .contact__title {
   font-family: Caveat Brush;
   font-style: normal;
@@ -7,7 +19,7 @@
   margin-top: 77px;
   color: $primary-text-color;
 
-  @include for-size(phone-up) {
+  @include for-size(phone-plus-only) {
     margin-top: 27px;
     font-size: 24px;
     line-height: 2.71;
@@ -33,7 +45,7 @@
 
   color: $primary-text-color;
 
-  @include for-size(phone-up) {
+  @include for-size(phone-plus-only) {
     font-size: 16px;
     line-height: 4.06;
   }
@@ -52,7 +64,7 @@
   flex-direction: column;
   margin: auto;
 
-  @include for-size(phone-up) {
+  @include for-size(phone-plus-only) {
     width: 265px;
   }
   @include for-size(tablet-up) {
@@ -101,7 +113,7 @@
   display: block;
   text-align: center;
 
-  @include for-size(phone-up) {
+  @include for-size(phone-plus-only) {
     margin-bottom: 47px;
     margin-top: 37px;
   }
@@ -137,7 +149,7 @@
 }
 
 .footer__icon-twitter {
-  @include for-size(phone-up) {
+  @include for-size(tablet-only) {
     width: 18.95px;
     height: 15px;
   }
@@ -148,7 +160,7 @@
 }
 
 .footer__icon-instagram {
-  @include for-size(phone-up) {
+  @include for-size(tablet-only) {
     height: 15px;
     width: 15px;
   }
@@ -159,7 +171,7 @@
 }
 
 .footer__icon-facebook {
-  @include for-size(phone-up) {
+  @include for-size(tablet-only) {
     height: 15px;
     width: 8.11px;
   }
@@ -175,7 +187,7 @@
   padding-bottom: 21px;
   align-items: baseline;
 
-  @include for-size(phone-up) {
+  @include for-size(phone-plus-only) {
     justify-content: space-around;
   }
   @include for-size(tablet-up) {
