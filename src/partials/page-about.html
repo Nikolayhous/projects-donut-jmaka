@@ -13,11 +13,28 @@
             <p class="about-us__article">Eva has been baking since she was six years old and over the last 49 years, she has created hundreds of cakes for
             weddings and has baked for many celebrities. Eva and our shop have received multiple awards & recognition for
             excellence.</p>
-            <p class="about-us__article"> <span id="more"> We are going to teach you how to cook with passion and sparkles in your eyes! We love what we do and believe
+            <p class="about-us__article"> <span class="dots" id="dots">...</span> <span id="more"> We are going to teach you how to cook with passion and sparkles in your eyes! We love what we do and believe
             you will enjoy our cooking atmosphere!</span>
             </p>
-            <button class="btn-read" type="button" id="read" onclick="read()">Read more</button>
-            <script type="text/javascript">
+            <button class="btn-read" id="btn" onclick="readMore()">Read more</button>
+           <script>
+               function readMore() {
+                    var dots = document.getElementById("dots");
+                    var more = document.getElementById("more");
+                    var btn = document.getElementById("btn");
+
+                    if (dots.style.display === "none") {
+                        dots.style.display = "inline";
+                        btn.innerHTML = "Read more";
+                        more.style.display = "none";
+                    } else {
+                        dots.style.display = "none";
+                        btn.innerHTML = "less";
+                        more.style.display = "inline";
+                    }
+                }
+           </script>
+            <!-- <script type="text/javascript">
             var i=0;
             function read(){
                 if(!i){
@@ -36,7 +53,7 @@
                 }
 
             }
-            </script>
+            </script> -->
         </div>
     </div>
 </section>
