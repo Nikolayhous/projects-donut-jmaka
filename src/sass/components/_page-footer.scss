@@ -183,17 +183,12 @@
 
 .footer-nav {
   display: flex;
+  justify-content: space-between;
 
   padding-bottom: 21px;
   align-items: baseline;
 
   @include for-size(phone-plus-only) {
-    justify-content: space-around;
-  }
-  @include for-size(tablet-up) {
-    justify-content: space-between;
-  }
-  @include for-size(desktop-up) {
     justify-content: space-around;
   }
 }
@@ -202,53 +197,11 @@
 .footer__location {
   font-size: 16px;
   line-height: 1.25;
-
   color: $primary-text-color;
 
   &:hover,
   &:focus {
-    color: $accent-title-btn-color;
+     color: $accent-title-btn-color;
+    fill: $accent-title-btn-color;
   }
-}
-
-.footer__link:hover,
-.footer__link:focus {
-  fill: $accent-title-btn-color;
-}
-
-.footer__tel:hover .icon-tel,
-.footer__tel:focus .icon-tel {
-  fill: $accent-title-btn-color;
-}
-
-.footer__location:hover .icon-location,
-.footer__location:focus .icon-location {
-  fill: $accent-title-btn-color;
-}
-
-
-.scroll-to-top-button {
-  top: -100px;
-  right: 0;
-  position: absolute;
-  background-color: transparent;
-  width: 32px;
-  height: 32px;
-  font-family: verdana;
-  border-radius: 5px;
-  cursor: pointer;
-  padding: 15px;
-  margin: 20px;
- 
-}
-
-.scroll-to-top-button::before {
-  content: '^';
-  font-size: 40px;
-  font-weight: 700;
-  color: $bg-button-color;
-  // width: 25px;
-  // height: 20px;
-  background-color: transparent;
-  box-shadow: 0 14px 28px rgba(171, 129, 108, 0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
