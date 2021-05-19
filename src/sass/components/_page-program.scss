@@ -1,20 +1,20 @@
 
 .program-section {
    @include for-size (phone-only){
-        min-width: 290px;
+        max-width: 480px;
         margin-bottom: 25px;
    }
    
    @include for-size (tablet-up){
        position: relative;
-       min-width: 635px;
+       max-width: 960px;
        display: flex;
        justify-content: space-between;
        margin-bottom: 0;
     }
 
     @include for-size (desktop-up){
-        min-width: 824px;
+        width: 824px;
         display: flex;
         justify-content: space-between;
         margin-bottom: 68px;

@@ -1,5 +1,5 @@
 .background-top {
-  @include for-size(phone-only) {
+  @include for-size(phone-plus-only) {
     background-image:
       url(../images/header/mobile/pic_donuts-min.png), url(../images/bg/mobille/bg@1x.png);
     background-size: 130px, contain;
