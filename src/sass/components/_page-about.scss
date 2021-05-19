@@ -68,8 +68,6 @@
   }
 }
 .about-img {
-  // position: static;
-  z-index: -1;
   margin: 0;
   width: 100%;
   @include for-size(tablet-up) {
@@ -81,9 +79,11 @@
     width: 512px;
     height: 547px;
     margin-right: 76px;
+    z-index: -1;
   }
   @include for-size(phone-plus-only) {
     margin-top: -15px;
+    z-index: -1;
   }
 }
 // .about-section {
