@@ -4,15 +4,17 @@
   background-color: $registration-bg-color;
   box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
   border-radius: 150px 150px 0px 0px;
-  @include for-size(phone-only) {
-    width: 290px;
+  @include for-size(phone-plus-only) {
+    width: 320px;
     height: 510px;
   }
   @include for-size(tablet-up) {
+    width: 664px;
+
     border-radius: 150px;
   }
   @include for-size(desktop-up) {
-    width: 822px;
+    width: 854px;
   }
 }
 
@@ -40,7 +42,7 @@
 }
 
 .registration__title {
-  // margin-bottom: 27px;
+  margin-bottom: 27px;
   @include for-size(tablet-up) {
     display: none;
   }
@@ -67,7 +69,7 @@
   color: $primary-text-color;
   @include for-size(tablet-up) {
     margin-bottom: 35px;
-    max-width: 165px;
+    max-width: 168px;
   }
 }
 .registration__value {
@@ -115,7 +117,7 @@
 }
 
 .form__input {
-  width: 292px;
+  width: 234px;
   margin-bottom: 25px;
   padding: 0;
   font-size: 16px;
@@ -127,9 +129,9 @@
   border-top: none;
   border-bottom: 1px solid $input-border-color;
   outline: none;
-  @include for-size(phone-only) {
+  @include for-size(phone-plus-only) {
     width: 265px;
-    }
+  }
 }
 
 .form__input:invalid:not(:focus) {
