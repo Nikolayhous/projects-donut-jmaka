@@ -19,6 +19,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
       <link rel="stylesheet" href="./js/custom.js" />
+      <!-- <link rel="stylesheet" href="./js/read-more.js" /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -44,8 +45,25 @@
       <include src="./partials/page-footer.html"></include>
     </div>
 
-   
+   <script>
+     function readMore() {
+        var dots = document.getElementById("dots");
+        var more = document.getElementById("more");
+        var btn = document.getElementById("btn");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btn.innerHTML = "Read more";
+          more.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btn.innerHTML = "less";
+          more.style.display = "inline";
+        }
+      }
+   </script>
     <script src="./index.js"></script>
+    <!-- <script src="./js/read-more.js"></script> -->
     <script src="./js/custom.js"></script>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
