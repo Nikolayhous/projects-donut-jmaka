@@ -23,17 +23,17 @@ if ($slider.length) {
   });
 
   $('.slider').slick({
-  centerMode: false,
-  centerPadding: '50px',
+  centerMode: true,
+    // centerPadding: '60px',
+  Infinite: true,
   dots: false,
-  infinite: true,
   speed: 300,
-  slidesToShow: 3,
-  slidestoscroll:1,
-  adaptiveHeight: false,
-  autoplay: true,
+    slidesToShow: 3,
+  toshowCount:1,
+    autoplay: false,
     autoplaySpeed: 2500,
     swipeToSlide: true,
+    adaptiveHeight: true,
     responsive: [
       {
         breakpoint: 767.99,

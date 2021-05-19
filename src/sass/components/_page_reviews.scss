@@ -1,24 +1,39 @@
-.reviews-section__title {
-  line-height: 2.7;
-  // @include for-size(tablet-up) {
-  //   margin-bottom: 10px;
-  // }
-  // @include for-size(desktop-up) {
-  //   margin-bottom: 68px;
-  // }
+// .reviews-section__list {
+//   display: flex;
+//   justify-content: center;
+// }
+
+.reviews-section__item {
+  @include for-size(tablet-up) {
+    // margin-left: 38px;
+    // margin-right: 38px;
+    // padding: 0px;
+    // border: 1px dotted brown;
+  }
 }
 
-// .reviews-section__list {
-// }
+.reviews-section__title {
+  line-height: 2.7;
+  @include for-size(tablet-up) {
+    margin-bottom: -25px;
+  }
+  @include for-size(desktop-up) {
+    margin-bottom: 5px;
+  }
+}
 
 .reviews-section__user-photo {
   width: 110px;
   height: 110px;
   border-radius: 50%;
-  background-color: aqua;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 6px;
+
+  @include for-size(desktop-up) {
+    width: 136px;
+    height: 136px;
+  }
 }
 
 .rate-list {
@@ -43,6 +58,10 @@
   color: $primary-text-color;
   margin-top: 10px;
   margin-bottom: 10px;
+
+  @include for-size(desktop-up) {
+    font-size: 16px;
+  }
 }
 .reviews-section__text {
   font-size: 16px;
@@ -51,12 +70,41 @@
   margin-bottom: 35px;
   color: $primary-text-color;
 
+  @include for-size(tablet-up) {
+    display: none;
+  }
 }
-// Slider
 
-// .slick-track {
-//   display: flex;
+// Slider
+.slider {
+  @include for-size(dektop-up) {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+.slick-current {
+  @include for-size(tablet-up) {
+    transform: translateY(+120px) scale(1.5);
+  }
+}
+.slick-current .reviews-section__text {
+  @include for-size(tablet-up) {
+    display: block;
+  }
+}
+.slick-track {
+  height: 100%;
+}
+// .slick-current
+// .slick-center {
+
 // }
+.slick-center {
+  @include for-size(tablet-up) {
+    transition: all 300ms linear;
+  }
+}
 
 .slider__counter {
   display: flex;
@@ -65,7 +113,7 @@
   color: $carousel-color;
   margin-bottom: 30px;
   justify-content: center;
-  
+
   @include for-size(desktop-up) {
     margin-bottom: 68px;
   }
@@ -84,4 +132,9 @@
   &::after {
     margin-left: 12px;
   }
+}
+// Slider Buttons
+.slick-next:before,
+.slick-prev:before {
+  color: $carousel-color;
 }
