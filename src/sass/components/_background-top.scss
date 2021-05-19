@@ -1,55 +1,53 @@
 .background-top {
   @include for-size(phone-only) {
-    background-image: url(../images/about_us/mobile/cupcake_box-min.png),
+    background-image:
       url(../images/header/mobile/pic_donuts-min.png), url(../images/bg/mobille/bg@1x.png);
-    background-size: 290px, 130px, contain;
-    background-position: top 360px center, top left, top;
-    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 130px, contain;
+    background-position:top left, top;
+    background-repeat: no-repeat, no-repeat;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/about_us/mobile/cupcake_box@2x-min.png),
+      background-image:
         url(../images/header/mobile/pic_donuts@2x-min.png), url(../images/bg/mobille/bg@2x.png);
     }
   }
 
 
   @include for-size(tablet-up) {
-    background-image: url(../images/about_us/desktop/cupcake_box-min.png),
+    background-image:
       url(../images/header/tablet/pic_donuts-min.png), url(../images/bg/tablet/bg@1x.png);
-    background-size: 330px, 378px, contain;
-    background-position: top 371px left 11px, top right 137px, top;
-    background-repeat: no-repeat, no-repeat, repeat-x;
+    background-size: 378px, contain;
+    background-position: top right 137px, top;
+    background-repeat:no-repeat, repeat-x;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/about_us/desktop/cupcake_box@2x-min.png),
-        url(../images/header/tablet/pic_donuts@2x-min.png), url(../images/bg/tablet/bg@2x.png);
+      background-image: url(../images/header/tablet/pic_donuts@2x-min.png), 
+                        url(../images/bg/tablet/bg@2x.png);
     }
   }
 
-    @include for-size (desktop-up) {
-        background-image: url(../images/about_us/mobile/cupcake_box-min.png),
-                          url(../images/header/mobile/pic_donuts-min.png),
-                          url(../images/bg/mobille/bg@1x.png);
-        background-size:   290px, 130px, cover;
-        background-position: top 360px left 15px, top left, top;
-        background-repeat:  no-repeat, no-repeat, no-repeat;
-        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) { 
-            background-image: url(../images/about_us/mobile/cupcake_box@2x-min.png),
-                              url(../images/header/mobile/pic_donuts@2x-min.png),
-                              url(../images/bg/mobille/bg@2x.png);
-            }
-        }
+    // @include for-size (desktop-up) {
+    //     background-image:
+    //                       url(../images/header/mobile/pic_donuts-min.png),
+    //                       url(../images/bg/mobille/bg@1x.png);
+    //     background-size:  130px, cover;
+    //     background-position: top left, top;
+    //     background-repeat:  no-repeat, no-repeat, no-repeat;
+    //     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) { 
+    //         background-image: 
+    //                           url(../images/header/mobile/pic_donuts@2x-min.png),
+    //                           url(../images/bg/mobille/bg@2x.png);
+    //         }
+    //     }
 
 
   @include for-size(desktop-up) {
     background-image: url(../images/header/desktop/spoon-min.png),
-      url(../images/header/desktop/pic_donuts-min.png), url(../images/bg/desktop/bg@1x.png),
-      url(../images/about_us/desktop/cupcake_box-min.png);
-    background-size: 178px, 693px, cover, 512px;
-    background-position: top 166px left, top right, top, top 608px left 71px;
-    background-repeat: no-repeat, no-repeat, repeat-x, no-repeat;
+      url(../images/header/desktop/pic_donuts-min.png), url(../images/bg/desktop/bg@1x.png);
+    background-size: 178px, 693px, cover;
+    background-position: top 166px left, top right, top;
+    background-repeat: no-repeat, no-repeat, repeat-x;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/header/desktop/spoon@2x-min.png),
-        url(../images/header/desktop/pic_donuts@2x-min.png), url(../images/bg/desktop/bg@2x.png),
-        url(../images/about_us/desktop/cupcake_box@2x-min.png);
+        url(../images/header/desktop/pic_donuts@2x-min.png), url(../images/bg/desktop/bg@2x.png);
     }
   }
 }

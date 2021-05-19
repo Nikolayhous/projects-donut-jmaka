@@ -1,16 +1,24 @@
 
+.header__container {
+    @include for-size(phone-plus) {
+        width: 480px;
+    }
+    @include for-size(tablet-only) {
+        width: 664px;
+  }
+    @include for-size(desktop-up) {
+        width: 854px;
+}
+}
+
 .general {
     @include for-size(tablet-only) {
     display: flex;
-   
-    }
-    @include for-size(phone-only) {
-       
     }
 }
 
 .header__nav {
-    @include for-size(tablet-up ) {
+    @include for-size(tablet-up) {
         display: flex;
       }
 
@@ -20,7 +28,6 @@
     @include for-size(phone-only) {
         display: block;
         padding-top: 7px;
-        padding-left: 109px;
         margin-bottom: 33px;
     }
     @include for-size(tablet-up ) {
@@ -31,7 +38,6 @@
 
     @include for-size(desktop-up) {
     padding-top: 31px;
-    padding-left: 214px;
     margin-right: 38px;
     margin-bottom: 51px;
     }

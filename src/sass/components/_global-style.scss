@@ -41,17 +41,17 @@ img {
   padding-right: 15px;
   // border: 1px solid red;
 
-  @include for-size(phone-up) {
-    width: 320px;
-  }
+  // @include for-size(phone-up) {
+  //   width: 480px;
+  // }
 
-  @include for-size(tablet-up) {
-    width: 768px;
-  }
+  // @include for-size(tablet-up) {
+  //   width: 665px;
+  // }
 
-  @include for-size(desktop-up) {
-    width: 1280px;
-  }
+  // @include for-size(desktop-up) {
+  //   width: 854px;
+  // }
 }
 
 // заголовок секций для моб и таблет
