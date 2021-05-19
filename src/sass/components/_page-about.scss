@@ -60,6 +60,7 @@
   }
 }
 .btn-read {
+  text-decoration: none;
   background-color: transparent;
   color: $bg-button-color;
   outline: none;
@@ -72,5 +73,10 @@
   @include for-size(desktop-up) {
     display: none;
     margin-bottom: 44px;
+  }
+}
+.readmore {
+  @include for-size(tablet-only) {
+    display: none;
   }
 }
