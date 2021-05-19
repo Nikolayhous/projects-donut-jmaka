@@ -42,15 +42,15 @@ img {
   // border: 1px solid red;
 
   @include for-size(phone-up) {
-    width: 320px;
+    max-width: 480px;
   }
 
   @include for-size(tablet-up) {
-    width: 768px;
+    width: 665px;
   }
 
   @include for-size(desktop-up) {
-    width: 1280px;
+    width: 854px;
   }
 }
 
