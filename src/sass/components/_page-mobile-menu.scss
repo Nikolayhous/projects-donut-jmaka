@@ -33,6 +33,7 @@
     height: 18px;
     }
 
+
     .header__logo--mobille {
         display: block;
         padding-top: 20px;
@@ -75,10 +76,12 @@
 .is-open {
     .icon-close {
         display: block;
+
     }
 
     .icon-menu {
         display: none;
+        position: fixed;
     }
 }
 

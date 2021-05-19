@@ -14,7 +14,7 @@
 .general {
     @include for-size(phone-plus-only) {
         display: flex;
-        justify-content: center;
+        padding-left: 162px;
     }
     @include for-size(tablet-up) {
         display: flex;
@@ -32,6 +32,7 @@
     display: block;
     padding-top: 7px;
     margin-bottom: 33px;
+    margin-right: 67px;
     text-align: center;
 
     @include for-size(tablet-up) {
