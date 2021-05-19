@@ -93,7 +93,8 @@ img {
     background-color: $title-button-color;
     color: $bg-button-color;
     // box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
-    box-shadow: inset 3px 0px 30px 8px rgb(171 129 108 / 25%);
+    // box-shadow: inset 3px 0px 30px 8px rgb(171 129 108 / 25%);
+    box-shadow: 0 14px 28px rgba(171, 129, 108, 0.25), 0 10px 10px rgba(0,0,0,0.22), inset 3px 0px 30px 8px rgb(171 129 108 / 25%);
   }
 
   @include for-size(desktop-up) {
