@@ -60,6 +60,7 @@
   }
 }
 .btn-read {
+  text-decoration: none;
   background-color: transparent;
   color: $bg-button-color;
   outline: none;
@@ -74,8 +75,16 @@
     margin-bottom: 44px;
   }
 }
+
 // .dots {
 //   @include for-size(desktop-up) {
 //     display: none;
 //   }
 // }
+
+.readmore {
+  @include for-size(tablet-only) {
+    display: none;
+  }
+}
+
