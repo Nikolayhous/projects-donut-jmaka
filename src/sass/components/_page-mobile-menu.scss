@@ -2,20 +2,20 @@
 .header__btn--menu {
     position: relative;
     z-index: 2;
-    display: block;
     width: 30px;
     height: 18px;
+    display: block;
     background-color: transparent;
     border: none;
     outline: none;
 
-    @include for-size(phone-only) {
+    @include for-size(phone-plus-only) {
         padding-top: 15px;
 
         }
 
     &.is-open {
-        @include for-size(phone-plus) {
+        @include for-size(phone-plus-only) {
         padding-top: 20px;
         }
     }
