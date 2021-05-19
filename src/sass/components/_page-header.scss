@@ -12,7 +12,7 @@
 }
 
 .general {
-    @include for-size(tablet-only) {
+    @include for-size(phone-plus) {
     display: flex;
     }
 }
