@@ -3,7 +3,7 @@
     @include for-size(phone-plus) {
         width: 480px;
     }
-    @include for-size(tablet-only) {
+    @include for-size(tablet-up) {
         width: 664px;
   }
     @include for-size(desktop-up) {
@@ -12,8 +12,12 @@
 }
 
 .general {
-    @include for-size(phone-plus) {
+    @include for-size(phone-only) {
     display: flex;
+    justify-content: center;
+    }
+    @include for-size(tablet-up) {
+    justify-content: space-between;
     }
 }
 
@@ -21,11 +25,10 @@
     @include for-size(tablet-up) {
         display: flex;
       }
-
 }
 
 .header__link--logo {
-    @include for-size(phone-only) {
+    @include for-size(phone-only ) {
         display: block;
         padding-top: 7px;
         margin-bottom: 33px;
