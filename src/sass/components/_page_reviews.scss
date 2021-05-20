@@ -26,10 +26,7 @@
 .reviews-section__title {
   line-height: 2.7;
   @include for-size(tablet-up) {
-    margin-bottom: 5px;
-  }
-  @include for-size(desktop-up) {
-    margin-bottom: 5px;
+    margin-bottom: -20px;
   }
 }
 
@@ -102,8 +99,12 @@
 // }
 .slick-current .reviews-section__user-photo {
   @include for-size(tablet-up) {
-    width: 234px;
-    height: 234px;
+    width: 186px;
+    height: 186px;
+  }
+  @include for-size(desktop-up) {
+    width: 209px;
+    height: 209px;
   }
 }
 

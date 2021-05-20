@@ -1424,13 +1424,7 @@ img {
 
 @media (min-width: 768px) {
   .reviews-section__title {
-    margin-bottom: 5px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .reviews-section__title {
-    margin-bottom: 5px;
+    margin-bottom: -20px;
   }
 }
 
@@ -1499,8 +1493,15 @@ img {
 
 @media (min-width: 768px) {
   .slick-current .reviews-section__user-photo {
-    width: 234px;
-    height: 234px;
+    width: 186px;
+    height: 186px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .slick-current .reviews-section__user-photo {
+    width: 209px;
+    height: 209px;
   }
 }
 
