@@ -37,7 +37,9 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 6px;
-
+  @include for-size(tablet-up) {
+    opacity: 75%;
+  }
   @include for-size(desktop-up) {
     width: 136px;
     height: 136px;
@@ -86,21 +88,13 @@
   }
 }
 
-// .slider {
-//   @include for-size(dektop-up) {
-//     display: flex;
-//     justify-content: flex-start;
-//   }
-// }
-
-// .slick-cloned {
-//   @include for-size(tablet-up) {
-//   }
-// }
 .slick-current .reviews-section__user-photo {
   @include for-size(tablet-up) {
+    opacity: 100%;
     width: 186px;
     height: 186px;
+
+    transition: opacity 300ms linear;
   }
   @include for-size(desktop-up) {
     width: 209px;
@@ -120,16 +114,6 @@
   }
 }
 
-// .slick-current
-// .slick-center {
-
-// }
-// .slick-center {
-//   @include for-size(tablet-up) {
-//     margin-left: 30px;
-//     margin-right: 30px;
-//   }
-// }
 .slick-initialized .slick-slide {
   @include for-size(tablet-up) {
     display: flex;

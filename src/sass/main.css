@@ -1437,6 +1437,12 @@ img {
   margin-bottom: 6px;
 }
 
+@media (min-width: 768px) {
+  .reviews-section__user-photo {
+    opacity: 75%;
+  }
+}
+
 @media (min-width: 1280px) {
   .reviews-section__user-photo {
     width: 136px;
@@ -1493,8 +1499,10 @@ img {
 
 @media (min-width: 768px) {
   .slick-current .reviews-section__user-photo {
+    opacity: 100%;
     width: 186px;
     height: 186px;
+    transition: opacity 300ms linear;
   }
 }
 
