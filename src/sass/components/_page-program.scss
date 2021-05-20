@@ -21,6 +21,7 @@
 
     @include for-size (desktop-up){
         width: 854px;
+        height: 520px;
         display: flex;
         justify-content: space-between;
         margin-bottom: 68px;
@@ -552,6 +553,7 @@
     @include for-size(desktop-up){
         width: 180px;
         height: 180px;
+        bottom: 2px;
 
         & > a .program__grid-img {
             width: 83px;
