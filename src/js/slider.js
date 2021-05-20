@@ -23,13 +23,14 @@ if ($slider.length) {
   });
 
   $('.slider').slick({
-  centerMode: true,
-    // centerPadding: '60px',
+    centerMode: true,
+    variablewidth: true,
+  centerPadding: '0px',
   Infinite: true,
   dots: false,
   speed: 300,
     slidesToShow: 3,
-  toshowCount:1,
+  slidestoscroll:1,
     autoplay: false,
     autoplaySpeed: 2500,
     swipeToSlide: true,
