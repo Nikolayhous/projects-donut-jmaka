@@ -1,14 +1,13 @@
 
 .program-section {
 
-   @include for-size (phone-only){
-     max-width: 320px;
-     margin-bottom: 25px;
-   }
+//    @include for-size (phone-only){
+//      margin-bottom: 25px;
+//    }
 
    @include for-size (phone-plus-up){
     width: 480px;
-    margin-bottom: 25px;
+    // margin-bottom: 25px;
 }
       
    @include for-size (tablet-up){
@@ -24,7 +23,6 @@
         height: 520px;
         display: flex;
         justify-content: space-between;
-        margin-bottom: 31px;
     }
 }
 
@@ -69,25 +67,24 @@
     display: inline-block;
     color: $primary-text-color;
 
-    @include for-size(phone-only){
-        margin-top: 10px;
-        max-width: 290px;
-        font-size: 16px;
-        line-height: 1.25;
+    // @include for-size(phone-only){
+    //     margin-top: 10px;
+    //     font-size: 16px;
+    //     line-height: 1.25;
     
-    }
+    // }
 
-    @include for-size(phone-plus-up){
-        margin-top: 10px;
-        max-width: 290px;
-        font-size: 16px;
-        line-height: 1.25;
+    // @include for-size(phone-plus-up){
+    //     margin-top: 10px;
+
+    //     font-size: 16px;
+    //     line-height: 1.25;
     
-    }
+    // }
 
     @include for-size(tablet-up){
         margin-top: 10px;
-        max-width: 298px;
+        width: 298px;
         font-size: 16px;
         line-height: 1.25;
     }
@@ -117,17 +114,16 @@
         margin-right: 8px;
     }
 
-    @include for-size(phone-only) {
-        min-width: 290px;
+    @include for-size(tablet-only ) {
         font-size: 16px;
         line-height: 1.25;
     }
 
-    @include for-size(phone-plus-up) {
-        min-width: 290px;
-        font-size: 16px;
-        line-height: 1.25;
-    }
+    // @include for-size(phone-plus-up) {
+    //     min-width: 290px;
+    //     font-size: 16px;
+    //     line-height: 1.25;
+    // }
 
     @include for-size(tablet-up) {
         width: 300px;
@@ -223,25 +219,31 @@
     }
 }
 
-  
+  .program__container {
+    @include for-size (phone-plus-up) {
+        display: flex;
+        justify-content: center;
+    }
+  }
 
 
 .program__grid {
     position: relative;
     padding: 0;
     margin: 0;
-    width: 290px;
     height: 423px;
     margin-top: 0;
     margin-bottom: 38px;
     // border: 1px solid tomato;
+
+
 
     @include for-size (tablet-up) {
         position: absolute;
         right: 0px;
         top: 0;
         width: 300px;
-        height: 400px;
+        // height: 400px;
         margin-bottom: 0;
         margin-top: 0;
     }
@@ -291,7 +293,7 @@
         width: 142px;
         height: 142px;
 
-        // margin-right: 6px;
+        margin-left: 15px;
 
         top: 60px;
 
@@ -306,6 +308,7 @@
     @include for-size(tablet-up){
         width: 142px;
         height: 142px;
+        margin: 0;
 
         // margin-right: 15px;
 
@@ -375,7 +378,7 @@
     @include for-size(phone-plus-up){
         width: 142px;
         height: 142px;
-        // margin-bottom: 58px;
+        margin-right: 15px;
 
         top: 83px;
 
@@ -389,6 +392,7 @@
     @include for-size(tablet-up){
         width: 142px;
         height: 142px;
+        margin: 0;
 
         // margin-bottom: 58px;
 
@@ -456,6 +460,7 @@
     @include for-size(phone-plus-up){
         width: 142px;
         height: 142px;
+        margin-left: 15px;
 
         & > a .program__grid-img {
             position: absolute;
@@ -468,6 +473,7 @@
     @include for-size(tablet-up){
         width: 142px;
         height: 142px;
+        margin: 0;
 
         // margin-bottom: 58px;
 
@@ -531,6 +537,7 @@
     @include for-size(phone-plus-up){
         width: 142px;
         height: 142px;
+        margin-right: 15px;
 
         & > a .program__grid-img {
             position: absolute;
@@ -542,6 +549,7 @@
     @include for-size(tablet-up){
         width: 142px;
         height: 142px;
+        margin: 0;
 
         & > a .program__grid-img {
             position: absolute;
