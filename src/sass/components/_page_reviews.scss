@@ -147,6 +147,7 @@
     margin-bottom: 68px;
   }
 
+  
   &::before,
   &::after {
     content: '';
@@ -165,5 +166,5 @@
 // Slider Buttons
 .slick-next:before,
 .slick-prev:before {
-  color: black;
+  color: $bg-button-color;
 }
