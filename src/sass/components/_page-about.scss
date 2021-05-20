@@ -116,7 +116,7 @@
     content: 'Read more';
   }
   &:checked ~ .read-more-btn::before {
-    content: 'less';
+    content: 'Less';
   }
   @include for-size(desktop-up) {
     display: none;
