@@ -85,7 +85,7 @@
   @include for-size(tablet-up) {
     display: none;
     width: 626px;
-    text-align: center;
+    white-space: pre-line;
   }
 }
 
