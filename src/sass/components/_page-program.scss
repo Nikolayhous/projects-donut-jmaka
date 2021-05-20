@@ -2,12 +2,12 @@
 .program-section {
 
    @include for-size (phone-only){
-     max-width: 320px;
+     min-width: 320px;
      margin-bottom: 25px;
    }
 
    @include for-size (phone-plus-up){
-    width: 480px;
+    min-width: 480px;
     margin-bottom: 25px;
 }
       
@@ -71,7 +71,7 @@
 
     @include for-size(phone-only){
         margin-top: 10px;
-        max-width: 290px;
+        min-width: 290px;
         font-size: 16px;
         line-height: 1.25;
     
@@ -79,7 +79,7 @@
 
     @include for-size(phone-plus-up){
         margin-top: 10px;
-        max-width: 290px;
+        min-width: 290px;
         font-size: 16px;
         line-height: 1.25;
     
@@ -101,8 +101,19 @@
 }
 
 .desktop-text {
-    @include for-size (tablet-only){
+    @include for-size (phone-only){
         display: none;
+    }
+
+    @include for-size (phone-plus-up){
+        display: none;
+    }
+    @include for-size (tablet-up){
+        display: none;
+    }
+
+    @include for-size (desktop-up){
+        display: inherit;
     }
 }
 
@@ -230,7 +241,7 @@
     position: relative;
     padding: 0;
     margin: 0;
-    width: 290px;
+    max-width: 480px;
     height: 423px;
     margin-top: 0;
     margin-bottom: 38px;
