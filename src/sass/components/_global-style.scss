@@ -77,7 +77,6 @@ img {
 
   &:focus,
   &:hover {
-    border: 1px solid $bg-button-color;
     background-color: $title-button-color;
     color: $bg-button-color;
     // box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
@@ -88,7 +87,7 @@ img {
 
   &:focus,
   &:hover {
-    border: 1px solid $bg-button-color;
+    // outline: 2px solid $bg-button-color;
     background-color: $title-button-color;
     color: $bg-button-color;
     // box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
