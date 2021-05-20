@@ -147,7 +147,6 @@
     margin-bottom: 68px;
   }
 
-  
   &::before,
   &::after {
     content: '';
@@ -164,7 +163,8 @@
   }
 }
 // Slider Buttons
-.slick-next:before,
-.slick-prev:before {
+
+.slick-next::before,
+.slick-prev::before {
   color: $bg-button-color;
 }

@@ -24,7 +24,7 @@ if ($slider.length) {
 
   $('.slider').slick({
     centerMode: true,
-    variablewidth: true,
+    variablewidth: false,
   centerPadding: '0px',
   Infinite: true,
   dots: false,
@@ -35,14 +35,22 @@ if ($slider.length) {
     autoplaySpeed: 2500,
     swipeToSlide: true,
     adaptiveHeight: true,
+    arrows: true,
     responsive: [
+      {
+        breakpoint: 1279.99,
+        settings: {
+        arrows: false,
+        }
+      },
       {
         breakpoint: 767.99,
         settings: {
           centerMode: false,
           dots: false,
           centerPadding: "0px",
-        slidesToShow: 1,
+          slidesToShow: 1,
+        arrows: false,
         }
       }
     ]
