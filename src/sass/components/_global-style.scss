@@ -39,7 +39,7 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 // заголовок секций для моб и таблет
 
@@ -120,43 +120,33 @@ img {
   text-align: start;
   border: none;
   background-color: inherit;
-  
-  
 
   @include for-size(desktop-up) {
-      display: none;
+    display: none;
   }
 }
-
-
 
 .read-more-checker {
   opacity: 0;
   position: absolute;
 
-
   & ~ .limited {
-     display: none;
-   }
+    display: none;
+  }
 
-  
   &:checked ~ .limited {
-      display: inherit;
-  } 
-    
-  & ~ .read-more-btn::before {
-      content: "Read more";
+    display: inherit;
   }
-      
-      
-  &:checked ~ .read-more-btn::before {
-      content: "Less";
-  }
- 
- 
 
-  @include for-size (desktop-up){
-      display: none;
+  & ~ .read-more-btn::before {
+    content: 'Read more';
+  }
+
+  &:checked ~ .read-more-btn::before {
+    content: 'Less';
+  }
+
+  @include for-size(desktop-up) {
+    display: none;
   }
 }
-
