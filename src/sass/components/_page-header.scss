@@ -1,6 +1,6 @@
 
 .header__container {
-    @include for-size(phone-plus-only) {
+    @include for-size(phone-plus-up) {
         width: 480px;
     }
     @include for-size(tablet-up) {

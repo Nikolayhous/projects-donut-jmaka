@@ -6,7 +6,7 @@
   padding-right: 15px;
   position: relative;
   @include for-size(phone-plus-up) {
-    width: 510px;
+    width: 480px;
   }
   @include for-size(tablet-up) {
     width: 655px;

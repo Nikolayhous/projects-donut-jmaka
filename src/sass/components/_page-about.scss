@@ -2,8 +2,6 @@
   margin: 0;
 }
 .about-section {
-  width: 100%;
-  padding-left: 0;
   @include for-size(phone-plus-up) {
     width: 480px;
   }
