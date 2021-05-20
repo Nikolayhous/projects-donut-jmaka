@@ -28,10 +28,10 @@
     // width: 336px;
     // display: flex;
   }
-  @include for-size(desktop-up) {
-    // width: 392px;
-    margin-bottom: 44px;
-  }
+  // @include for-size(desktop-up) {
+  //   // width: 392px;
+  //   margin-bottom: 44px;
+  // }
 
   &__title {
     font-family: 'Caveat Brush', sans-serif;
@@ -80,7 +80,6 @@
     z-index: -1;
   }
   @include for-size(phone-plus-only) {
-    margin-top: -15px;
     z-index: -1;
   }
 }

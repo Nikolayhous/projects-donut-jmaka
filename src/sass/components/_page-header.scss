@@ -14,7 +14,7 @@
 .general {
     @include for-size(phone-plus-only) {
         display: flex;
-        padding-left: 162px;
+        justify-content: flex-end;
     }
     @include for-size(tablet-up) {
         display: flex;
