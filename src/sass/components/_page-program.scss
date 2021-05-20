@@ -1,25 +1,32 @@
 
 .program-section {
+
    @include for-size (phone-only){
-        max-width: 480px;
-        margin-bottom: 25px;
+     max-width: 320px;
+     margin-bottom: 25px;
    }
-   
+
+   @include for-size (phone-plus-up){
+    width: 480px;
+    margin-bottom: 25px;
+}
+      
    @include for-size (tablet-up){
        position: relative;
-       max-width: 960px;
+       width: 665px;
        display: flex;
        justify-content: space-between;
        margin-bottom: 0;
     }
 
     @include for-size (desktop-up){
-        width: 824px;
+        width: 854px;
         display: flex;
         justify-content: space-between;
         margin-bottom: 68px;
     }
 }
+
 
 .program__title {
     font-family: Caveat Brush;
@@ -31,6 +38,12 @@
     // margin-bottom: 10px;
 
     @include for-size(phone-only){
+        font-size: 24px;
+        line-height: 2.71;
+        text-align: center;
+    }
+
+    @include for-size(phone-plus-up){
         font-size: 24px;
         line-height: 2.71;
         text-align: center;
@@ -50,12 +63,20 @@
     
     
 }
-.program__limited,
+
 .program__text {
     display: inline-block;
     color: $primary-text-color;
 
-    @include for-size(phone-up){
+    @include for-size(phone-only){
+        margin-top: 10px;
+        max-width: 290px;
+        font-size: 16px;
+        line-height: 1.25;
+    
+    }
+
+    @include for-size(phone-plus-up){
         margin-top: 10px;
         max-width: 290px;
         font-size: 16px;
@@ -79,10 +100,6 @@
 }
 
 .desktop-text {
-    @include for-size (phone-only){
-        display: none;
-    }
-
     @include for-size (tablet-only){
         display: none;
     }
@@ -99,7 +116,14 @@
         margin-right: 8px;
     }
 
-    @include for-size(phone-up) {
+    @include for-size(phone-only) {
+        min-width: 290px;
+        font-size: 16px;
+        line-height: 1.25;
+    }
+
+    @include for-size(phone-plus-up) {
+        min-width: 290px;
         font-size: 16px;
         line-height: 1.25;
     }
@@ -123,10 +147,16 @@
     padding: 0;
     margin-top: 10px;
 
-    @include for-size (phone-up) {
+    @include for-size (phone-only) {
         font-size: 16px;
         line-height: 1.25;
     }
+
+    @include for-size (phone-plus-up) {
+        font-size: 16px;
+        line-height: 1.25;
+    }
+
 
     @include for-size (desktop-up) {
         font-size: 18px;
@@ -144,57 +174,53 @@
    }
 } 
 
-.program__btn {
-    @include for-size (phone-up){
-    margin: 0;
-    padding: 0;
-    font-family: Caveat Brush, sans-serif;
-    font-size: 18px;
-    line-height: 3.61;
-    color: $carousel-color;
-    text-align: start;
+// .read-more-btn {
+//     margin: 0;
+//     padding: 0;
+//     font-family: Caveat Brush, sans-serif;
+//     font-size: 18px;
+//     line-height: 3.61;
+//     color: $carousel-color;
+//     text-align: start;
+//     border: none;
+//     background-color: inherit;
     
-    // margin-top: 28px;
 
-    border: none;
-    background-color: inherit;
-    }
-
-    @include for-size(desktop-up) {
-        display: none;
-    }
-}
+//     @include for-size(desktop-up) {
+//         display: none;
+//     }
+// }
 
  
 
-.program__checker {
-    opacity: 0;
-    position: absolute;
+// .read-more-checker {
+//     opacity: 0;
+//     position: absolute;
 
-    & ~ .program__limited {
-       display: none;
-     }
+//     & ~ .limited {
+//        display: none;
+//      }
 
     
-     &:checked ~ .program__limited {
-        display: inherit;
-      } 
+//     &:checked ~ .limited {
+//         display: inherit;
+//     } 
       
-    & ~ .program__btn::before {
-        content: "Read more";
-    }
+//     & ~ .read-more-btn::before {
+//         content: "Read more";
+//     }
         
         
-    &:checked ~ .program__btn::before {
-        content: "Less";
-    }
+//     &:checked ~ .pread-more-btn::before {
+//         content: "Less";
+//     }
    
    
 
-    @include for-size (desktop-up){
-        display: none;
-    }
-}
+//     @include for-size (desktop-up){
+//         display: none;
+//     }
+// }
 
   
 
@@ -245,7 +271,22 @@
 
    
 
-    @include for-size(phone-up){
+    @include for-size(phone-only){
+        width: 142px;
+        height: 142px;
+
+        // margin-right: 6px;
+
+        top: 60px;
+
+        & > a .program__grid-img {
+            position: absolute;
+            left: 32px;
+            top: -34px;
+        }
+    }
+
+    @include for-size(phone-plus-up){
         width: 142px;
         height: 142px;
 
@@ -316,7 +357,21 @@
     }
 
     
-    @include for-size(phone-up){
+    @include for-size(phone-only){
+        width: 142px;
+        height: 142px;
+        // margin-bottom: 58px;
+
+        top: 83px;
+
+        & > a .program__grid-img {
+            position: absolute;
+            left: 38px;
+            top: -26px;
+        }
+    }
+
+    @include for-size(phone-plus-up){
         width: 142px;
         height: 142px;
         // margin-bottom: 58px;
@@ -385,7 +440,7 @@
     }
 
     
-    @include for-size(phone-up){
+    @include for-size(phone-only){
         width: 142px;
         height: 142px;
 
@@ -395,6 +450,19 @@
             top: -32px;
         }
     }
+
+
+    @include for-size(phone-plus-up){
+        width: 142px;
+        height: 142px;
+
+        & > a .program__grid-img {
+            position: absolute;
+            left: 36px;
+            top: -32px;
+        }
+    }
+
 
     @include for-size(tablet-up){
         width: 142px;
@@ -448,7 +516,18 @@
 
    
 
-    @include for-size(phone-up){
+    @include for-size(phone-only){
+        width: 142px;
+        height: 142px;
+
+        & > a .program__grid-img {
+            position: absolute;
+            left: 39px;
+            top: -28px;
+        }
+    }
+
+    @include for-size(phone-plus-up){
         width: 142px;
         height: 142px;
 
@@ -505,7 +584,12 @@
     text-align: center;
     color: $program-text-color;
 
-    @include for-size(phone-up){
+    @include for-size(phone-only){
+        font-size: 18px;
+        line-height: 1.28;
+    }
+
+    @include for-size(phone-plus-up){
         font-size: 18px;
         line-height: 1.28;
     }
@@ -524,7 +608,12 @@
     margin-top: 13px;
     color: $program-text-color;
 
-    @include for-size(phone-up){
+    @include for-size(phone-only){
+        font-size: 14px;
+        line-height: 1.21;
+    }
+
+    @include for-size(phone-plus-up){
         font-size: 14px;
         line-height: 1.21;
     }
@@ -541,7 +630,12 @@
     fill: $program-icon-color;
   
 
-    @include for-size(phone-up){
+    @include for-size(phone-only){
+        left: 60px;
+        bottom: 8px;
+    }
+
+    @include for-size(phone-plus-up){
         left: 60px;
         bottom: 8px;
     }
