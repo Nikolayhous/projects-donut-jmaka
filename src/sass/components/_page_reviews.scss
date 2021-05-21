@@ -33,9 +33,6 @@
 
 .reviews-section__title {
   line-height: 2.7;
-  @include for-size(tablet-up) {
-    margin-bottom: -20px;
-  }
 }
 
 .reviews-section__user-photo {
@@ -149,7 +146,7 @@
           align-items: center;
   line-height: 1.21;
   color: $carousel-color;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
