@@ -46,7 +46,8 @@
   margin-right: auto;
   margin-bottom: 6px;
   @include for-size(tablet-up) {
-    opacity: 75%;
+  //   opacity: 75%;
+   opacity: 0.75;
   }
   @include for-size(desktop-up) {
     width: 136px;
@@ -102,7 +103,8 @@
 
 .slick-current .reviews-section__user-photo {
   @include for-size(tablet-up) {
-    opacity: 100%;
+    // opacity: 100%;
+    opacity: 1;
     width: 186px;
     height: 186px;
 
