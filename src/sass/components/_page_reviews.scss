@@ -26,10 +26,7 @@
 .reviews-section__title {
   line-height: 2.7;
   @include for-size(tablet-up) {
-    margin-bottom: 5px;
-  }
-  @include for-size(desktop-up) {
-    margin-bottom: 5px;
+    margin-bottom: -20px;
   }
 }
 
@@ -40,7 +37,9 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 6px;
-
+  @include for-size(tablet-up) {
+    opacity: 75%;
+  }
   @include for-size(desktop-up) {
     width: 136px;
     height: 136px;
@@ -85,25 +84,21 @@
   @include for-size(tablet-up) {
     display: none;
     width: 626px;
-    text-align: center;
+    white-space: pre-line;
   }
 }
 
-// .slider {
-//   @include for-size(dektop-up) {
-//     display: flex;
-//     justify-content: flex-start;
-//   }
-// }
-
-// .slick-cloned {
-//   @include for-size(tablet-up) {
-//   }
-// }
 .slick-current .reviews-section__user-photo {
   @include for-size(tablet-up) {
-    width: 234px;
-    height: 234px;
+    opacity: 100%;
+    width: 186px;
+    height: 186px;
+
+    transition: opacity 300ms linear;
+  }
+  @include for-size(desktop-up) {
+    width: 209px;
+    height: 209px;
   }
 }
 
@@ -119,16 +114,6 @@
   }
 }
 
-// .slick-current
-// .slick-center {
-
-// }
-// .slick-center {
-//   @include for-size(tablet-up) {
-//     margin-left: 30px;
-//     margin-right: 30px;
-//   }
-// }
 .slick-initialized .slick-slide {
   @include for-size(tablet-up) {
     display: flex;
@@ -147,7 +132,6 @@
     margin-bottom: 68px;
   }
 
-  
   &::before,
   &::after {
     content: '';
@@ -164,7 +148,8 @@
   }
 }
 // Slider Buttons
-.slick-next:before,
-.slick-prev:before {
+
+.slick-next::before,
+.slick-prev::before {
   color: $bg-button-color;
 }

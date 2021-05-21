@@ -24,25 +24,35 @@ if ($slider.length) {
 
   $('.slider').slick({
     centerMode: true,
-    variablewidth: true,
+    variablewidth: false,
   centerPadding: '0px',
   Infinite: true,
   dots: false,
-  speed: 300,
+  speed: 700,
     slidesToShow: 3,
   slidestoscroll:1,
-    autoplay: false,
-    autoplaySpeed: 2500,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    easing: 'ease',
     swipeToSlide: true,
+    useCSS: true,
     adaptiveHeight: true,
+    arrows: true,
     responsive: [
+      {
+        breakpoint: 1279.99,
+        settings: {
+        arrows: false,
+        }
+      },
       {
         breakpoint: 767.99,
         settings: {
           centerMode: false,
           dots: false,
           centerPadding: "0px",
-        slidesToShow: 1,
+          slidesToShow: 1,
+        arrows: false,
         }
       }
     ]
