@@ -28,10 +28,7 @@
     // width: 336px;
     // display: flex;
   }
-  // @include for-size(desktop-up) {
-  //   // width: 392px;
-  //   margin-bottom: 44px;
-  // }
+
 
   &__title {
     font-family: 'Caveat Brush', sans-serif;
@@ -77,18 +74,13 @@
     width: 512px;
     height: 547px;
     margin-right: 76px;
-    padding-top: 20px;
     z-index: -1;
   }
   @include for-size(phone-plus-only) {
     z-index: -1;
   }
 }
-// .about-section {
-//   @include for-size(tablet-up) {
-//     display: flex;
-//   }
-// }
+
 
 .read-more-btn {
   text-decoration: none;

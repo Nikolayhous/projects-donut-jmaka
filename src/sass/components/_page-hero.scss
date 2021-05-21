@@ -1,5 +1,6 @@
+
 .hero {
-  // margin: 0;
+ 
   @include for-size(phone-plus-up) {
     width: 480px;
   }
@@ -49,7 +50,9 @@
 .social-icons {
   margin: 0;
   @include for-size(phone-plus-only) {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 45px;
   }
   @include for-size(tablet-up) {
@@ -68,9 +71,14 @@
 }
 
 .animate__animated.animate__zoomIn {
-  animation-duration: 2000ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  animation-delay: 300ms;
-  animation-direction: alternate;
-  animation-iteration-count: 3;
+  -webkit-animation-duration: 2000ms;
+          animation-duration: 2000ms;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
 }

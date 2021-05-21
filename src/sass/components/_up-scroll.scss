@@ -1,25 +1,25 @@
+
 .scroll-to-top-button {
-    top: -100px;
-    right: 0;
-    position: absolute;
-    background-color: transparent;
-    width: 32px;
-    height: 32px;
-    font-family: verdana;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 15px;
-    margin: 20px;
-   
-  }
-  
-  .scroll-to-top-button::before {
-    content: '^';
-    font-size: 40px;
-    font-weight: 500;
-    color: $bg-button-color;
-    // width: 25px;
-    // height: 20px;
-    background-color: transparent;
-    box-shadow: 0 14px 28px rgba(171, 129, 108, 0.25), 0 10px 10px rgba(0,0,0,0.22);
-  }
+  top: -100px;
+  right: 0;
+  position: absolute;
+  background-color: transparent;
+  width: 32px;
+  height: 32px;
+  font-family: verdana;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 15px;
+  margin: 20px;
+ 
+}
+
+.scroll-to-top-button::before {
+  content: '^';
+  font-size: 40px;
+  font-weight: 500;
+  color: $bg-button-color;
+  background-color: transparent;
+  -webkit-box-shadow: 0 14px 28px rgba(171, 129, 108, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+          box-shadow: 0 14px 28px rgba(171, 129, 108, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+}

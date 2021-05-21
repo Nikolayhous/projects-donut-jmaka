@@ -1,3 +1,4 @@
+
 .reviews-section {
   width: 100%;
   margin-right: auto;
@@ -17,9 +18,16 @@
 }
 .reviews-section__item {
   @include for-size(tablet-up) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -47,8 +55,12 @@
 }
 
 .rate-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   fill: $carousel-color;
 
   & .rate-list__item--border-color {
@@ -94,6 +106,10 @@
     width: 186px;
     height: 186px;
 
+    -webkit-transition: opacity 300ms linear;
+
+    -o-transition: opacity 300ms linear;
+
     transition: opacity 300ms linear;
   }
   @include for-size(desktop-up) {
@@ -116,17 +132,25 @@
 
 .slick-initialized .slick-slide {
   @include for-size(tablet-up) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 }
 
 .slider__counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   line-height: 1.21;
   color: $carousel-color;
   margin-bottom: 30px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 
   @include for-size(desktop-up) {
     margin-bottom: 68px;

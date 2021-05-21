@@ -1,680 +1,691 @@
 
 .program-section {
 
-//    @include for-size (phone-only){
-//      margin-bottom: 25px;
-//    }
-
-   @include for-size (phone-plus-up){
-    width: 480px;
-    // margin-bottom: 25px;
-}
-      
-   @include for-size (tablet-up){
-       position: relative;
-       width: 665px;
-       display: flex;
-       justify-content: space-between;
-       margin-bottom: 0;
-    }
-
-    @include for-size (desktop-up){
-        width: 854px;
-        height: 520px;
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
-
-.program__title {
-    font-family: Caveat Brush;
-    font-style: 400;
-    font-weight: 400;;
-    
-    color: $primary-text-color;
-    
-    // margin-bottom: 10px;
-
-    @include for-size(phone-only){
-        font-size: 24px;
-        line-height: 2.71;
-        text-align: center;
-    }
-
-    @include for-size(phone-plus-up){
-        font-size: 24px;
-        line-height: 2.71;
-        text-align: center;
-    }
-
-    @include for-size(tablet-up){
-        font-size: 24px;
-        line-height: 2.71;
-        text-align: start;
-    }
-    
-    @include for-size(desktop-up){
-        font-size: 36px;
-        line-height: 1.81;
-        text-align: start;
-    }    
-    
-    
-}
-.program__limited,
-.program__text {
-    display: inline-block;
-    color: $primary-text-color;
-
-    @include for-size(phone-plus-only){
-        margin-top: 10px;
-        font-size: 16px;
-        line-height: 1.25;
-    
-    }
-
-    // @include for-size(phone-plus-up){
-    //     margin-top: 10px;
-
-    //     font-size: 16px;
-    //     line-height: 1.25;
-    
-    // }
-
-    @include for-size(tablet-up){
-        margin-top: 10px;
-        width: 298px;
-        font-size: 16px;
-        line-height: 1.25;
-    }
-
-    @include for-size(desktop-up){
-        margin-top: 0;
-        min-width: 392px;
-        font-size: 18px;
-        line-height: 1.22;
-    }
-}
-
-.desktop-text {
-    @include for-size (tablet-only){
-        display: none;
-    }
-}
-
-
-
-.program__list {
-    list-style: none;
-    color: $primary-text-color;
-
-    & li::before {
-        content: ">";
-        margin-right: 8px;
-    }
-
-    @include for-size(tablet-only ) {
-        font-size: 16px;
-        line-height: 1.25;
-    }
-
-    // @include for-size(phone-plus-up) {
-    //     min-width: 290px;
-    //     font-size: 16px;
-    //     line-height: 1.25;
-    // }
-
-    @include for-size(tablet-up) {
-        width: 300px;
-        font-size: 16px;
-        line-height: 1.25;
-    }
-
-    @include for-size(desktop-up) {
-        width: 450px;
-        font-size: 18px;
-        line-height: 1.22;
-        margin-right: 40px;
-    }
-}
-
-.program__tail {
-    margin: 0;
-    padding: 0;
-    margin-top: 10px;
-
-    @include for-size (phone-only) {
-        font-size: 16px;
-        line-height: 1.25;
-    }
-
-    @include for-size (phone-plus-up) {
-        font-size: 16px;
-        line-height: 1.25;
-    }
-
-
-    @include for-size (desktop-up) {
-        font-size: 18px;
-        line-height: 1.22;
-        margin-top: 15px;
-
-        &:first-child {
-            margin-top: 21px;
-        }
-          
-        &:last-child {
-            margin-bottom: 21px;
-        }
-        
-   }
-} 
-
-.program__btn {
-    margin: 0;
-    padding: 0;
-    font-family: Caveat Brush, sans-serif;
-    font-size: 18px;
-    line-height: 3.61;
-    color: $carousel-color;
-    text-align: start;
-    border: none;
-    background-color: inherit;
-    
-
-    @include for-size(desktop-up) {
-        display: none;
-    }
-}
-
+    @include for-size (phone-plus-up){
+     width: 480px;
  
-
-.program__checker {
-    opacity: 0;
-    position: absolute;
-
-    & ~ .program__limited {
-       display: none;
-     }
-
-    
-    &:checked ~ .program__limited {
-        display: inherit;
-    } 
-      
-    & ~ .program__btn::before {
-        content: "Read more";
-    }
-        
-        
-    &:checked ~ .program__btn::before {
-        content: "Less";
-    }
-   
-   
-
-    @include for-size (desktop-up){
-        display: none;
-    }
-}
-
-  .program__container {
-    @include for-size (phone-plus-up) {
+ }
+       
+    @include for-size (tablet-up){
+        position: relative;
+        width: 665px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-    }
-  }
-
-
-.program__grid {
-    position: relative;
-    padding: 0;
-    margin: 0;
-    height: 423px;
-    margin-top: 0;
-    margin-bottom: 38px;
-    // border: 1px solid tomato;
-
-
-
-    @include for-size (tablet-up) {
-        position: absolute;
-        right: 0px;
-        top: 0;
-        width: 300px;
-        // height: 400px;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         margin-bottom: 0;
-        margin-top: 0;
-    }
-
-    @include for-size(desktop-up){
-        position: absolute;
-        right: 0px;
-        width: 392px;
-        height: 520px;
-   }
-}
-
-.program__grid-tail-first {
-    position: absolute;
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-    
-    border-radius: 50%;
-    background-color: $program-circle-color;
-    box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
-
-    &:hover,
-    &:focus {
-        opacity: 0.6;
-    }
-
-   
-
-    @include for-size(phone-only){
-        width: 142px;
-        height: 142px;
-
-        // margin-right: 6px;
-
-        top: 60px;
-
-        & > a .program__grid-img {
-            position: absolute;
-            left: 32px;
-            top: -34px;
-        }
-    }
-
-    @include for-size(phone-plus-up){
-        width: 142px;
-        height: 142px;
-
-        margin-left: 15px;
-
-        top: 60px;
-
-        & > a .program__grid-img {
-            position: absolute;
-            left: 32px;
-            top: -34px;
-        }
-    }
-
-    
-    @include for-size(tablet-up){
-        width: 142px;
-        height: 142px;
-        margin: 0;
-
-        // margin-right: 15px;
-
-        top: 33px;
-
-        & > a .program__grid-img {
-            position: absolute;
-            left: 32px;
-            top: -34px;
-        }
-    }    
-    
-    @include for-size(desktop-up){
-        width: 180px;
-        height: 180px;
-
-        // margin-right: 32px;
-
-        top: 42px;
-
-        
-        & > a .program__grid-img {
-            width: 97px;
-            height: 107px;
-            position: absolute;
-            left: 41px;
-            top: -43px;
-        }
-    }
-}
-
-.program__grid-tail-second {
-    position: absolute;
-    margin: 0;
-    padding: 0;
-
-    right: 0;
-    list-style: none;
-    
-    border-radius: 50%;
-    background-color: $program-circle-color;
-    box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25); 
-
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-        opacity: 0.6;
-    }
-
-    
-    @include for-size(phone-only){
-        width: 142px;
-        height: 142px;
-        // margin-bottom: 58px;
-
-        top: 83px;
-
-        & > a .program__grid-img {
-            position: absolute;
-            left: 38px;
-            top: -26px;
-        }
-    }
-
-    @include for-size(phone-plus-up){
-        width: 142px;
-        height: 142px;
-        margin-right: 15px;
-
-        top: 83px;
-
-        & > a .program__grid-img {
-            position: absolute;
-            left: 38px;
-            top: -26px;
-        }
-    }
-
-    @include for-size(tablet-up){
-        width: 142px;
-        height: 142px;
-        margin: 0;
-
-        // margin-bottom: 58px;
-
-        top: 58px;
-
-        & > a .program__grid-img {
-            position: absolute;
-            left: 38px;
-            top: -26px;
-        }
-    }
-
-    @include for-size(desktop-up){
-        width: 180px;
-        height: 180px;
-
-        // margin-bottom: 61px;
-
-        top: 98px;
-
-        & > a .program__grid-img {
-            width: 83px;
-            height: 92px;
-            position: absolute;
-            left: 48px;
-            top: -35px;
-        }
-    }
-}
-
-.program__grid-tail-third {
-    position: absolute;
-    margin: 0;
-    padding: 0;
-
-    bottom: 26px;
-    left: 0;
-    list-style: none;
-    
-    border-radius: 50%;
-    background-color: $program-circle-color;
-    box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25); 
-
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-        opacity: 0.6;
-    }
-
-    
-    @include for-size(phone-only){
-        width: 142px;
-        height: 142px;
-
-        & > a .program__grid-img {
-            position: absolute;
-            left: 36px;
-            top: -32px;
-        }
-    }
-
-
-    @include for-size(phone-plus-up){
-        width: 142px;
-        height: 142px;
-        margin-left: 15px;
-
-        & > a .program__grid-img {
-            position: absolute;
-            left: 36px;
-            top: -32px;
-        }
-    }
-
-
-    @include for-size(tablet-up){
-        width: 142px;
-        height: 142px;
-        margin: 0;
-
-        // margin-bottom: 58px;
-
-        & > a .program__grid-img {
-            position: absolute;
-            left: 36px;
-            top: -32px;
-        }
-    }
-
-    @include for-size(desktop-up){
-        width: 180px;
-        height: 180px;
-
-        bottom: 56px;
-
-        & > a .program__grid-img {
-            width: 88px;
-            height: 97px;
-            position: absolute;
-            left: 46px;
-            top: -40px;
-        }
-    }
-}
-
-.program__grid-tail-fourth {
-    position: absolute;
-    margin: 0;
-    padding: 0;
-
-    bottom: 0;
-    right: 0;
-    list-style: none;
-    
-    border-radius: 50%;
-    background-color: $program-circle-color;
-    box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25); 
-
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-        opacity: 0.6;
-    }
-
-   
-
-    @include for-size(phone-only){
-        width: 142px;
-        height: 142px;
-
-        & > a .program__grid-img {
-            position: absolute;
-            left: 39px;
-            top: -28px;
-        }
-    }
-
-    @include for-size(phone-plus-up){
-        width: 142px;
-        height: 142px;
-        margin-right: 15px;
-
-        & > a .program__grid-img {
-            position: absolute;
-            left: 39px;
-            top: -28px;
-        }
-    }
-
-    @include for-size(tablet-up){
-        width: 142px;
-        height: 142px;
-        margin: 0;
-
-        & > a .program__grid-img {
-            position: absolute;
-            left: 39px;
-            top: -28px;
-        }
-    }
-
-    @include for-size(desktop-up){
-        width: 180px;
-        height: 180px;
-        bottom: 2px;
-
-        & > a .program__grid-img {
-            width: 83px;
-            height: 92px;
-            position: absolute;
-            left: 49px;
-            top: -35px;
-        }
-    }
-}
-
-.program_grid-item {
-    position: absolute;
-    bottom: 40px;
-    left: 10px;
-    right: 10px;
-
-    @include for-size (desktop-up){
-        bottom: 50px;
-    left: 10px;
-    right: 10px;
-    }
-}
-
-.program__grid-title {
-    font-family: Caveat Brush;
-    font-style: 400;
-    font-weight: 400;
-   
-    text-align: center;
-    color: $program-text-color;
-
-    @include for-size(phone-only){
-        font-size: 18px;
-        line-height: 1.28;
-    }
-
-    @include for-size(phone-plus-up){
-        font-size: 18px;
-        line-height: 1.28;
-    }
-
+     }
+ 
+     @include for-size (desktop-up){
+         width: 854px;
+         height: 520px;
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: flex;
+         -webkit-box-pack: justify;
+             -ms-flex-pack: justify;
+                 justify-content: space-between;
+     }
+ }
+ 
+ 
+ .program__title {
+     font-family: Caveat Brush;
+     font-style: 400;
+     font-weight: 400;;
+     
+     color: $primary-text-color;
+     
+ 
+     @include for-size(phone-only){
+         font-size: 24px;
+         line-height: 2.71;
+         text-align: center;
+     }
+ 
+     @include for-size(phone-plus-up){
+         font-size: 24px;
+         line-height: 2.71;
+         text-align: center;
+     }
+ 
+     @include for-size(tablet-up){
+         font-size: 24px;
+         line-height: 2.71;
+         text-align: start;
+     }
+     
      @include for-size(desktop-up){
-        font-size: 24px;
-        line-height: 1.25;
-    }
-
-
-}
-
-.program__grid-text {
-    align-items: center;
-    text-align: center;
-    margin-top: 13px;
-    color: $program-text-color;
-
-    @include for-size(phone-only){
-        font-size: 14px;
-        line-height: 1.21;
-    }
-
-    @include for-size(phone-plus-up){
-        font-size: 14px;
-        line-height: 1.21;
-    }
-
+         font-size: 36px;
+         line-height: 1.81;
+         text-align: start;
+     }    
+     
+     
+ }
+ .program__limited,
+ .program__text {
+     display: inline-block;
+     color: $primary-text-color;
+ 
+     @include for-size(phone-plus-only){
+         margin-top: 10px;
+         font-size: 16px;
+         line-height: 1.25;
+     
+     }
+ 
+     @include for-size(tablet-up){
+         margin-top: 10px;
+         width: 298px;
+         font-size: 16px;
+         line-height: 1.25;
+     }
+ 
      @include for-size(desktop-up){
-        font-size: 16px;
-        line-height: 1.25;
-    }
-}
-
-
-.program__grid-icon {
-    position: absolute;
-    fill: $program-icon-color;
+         margin-top: 0;
+         min-width: 392px;
+         font-size: 18px;
+         line-height: 1.22;
+     }
+ }
+ 
+ .desktop-text {
+     @include for-size (tablet-only){
+         display: none;
+     }
+ }
+ 
+ 
+ 
+ .program__list {
+     list-style: none;
+     color: $primary-text-color;
+ 
+     & li::before {
+         content: ">";
+         margin-right: 8px;
+     }
+ 
+     @include for-size(tablet-only ) {
+         font-size: 16px;
+         line-height: 1.25;
+     }
+ 
   
-
-    @include for-size(phone-only){
-        left: 60px;
-        bottom: 8px;
+     @include for-size(tablet-up) {
+         width: 300px;
+         font-size: 16px;
+         line-height: 1.25;
+     }
+ 
+     @include for-size(desktop-up) {
+         width: 450px;
+         font-size: 18px;
+         line-height: 1.22;
+         margin-right: 40px;
+     }
+ }
+ 
+ .program__tail {
+     margin: 0;
+     padding: 0;
+     margin-top: 10px;
+ 
+     @include for-size (phone-only) {
+         font-size: 16px;
+         line-height: 1.25;
+     }
+ 
+     @include for-size (phone-plus-up) {
+         font-size: 16px;
+         line-height: 1.25;
+     }
+ 
+ 
+     @include for-size (desktop-up) {
+         font-size: 18px;
+         line-height: 1.22;
+         margin-top: 15px;
+ 
+         &:first-child {
+             margin-top: 21px;
+         }
+           
+         &:last-child {
+             margin-bottom: 21px;
+         }
+         
     }
-
-    @include for-size(phone-plus-up){
-        left: 60px;
-        bottom: 8px;
-    }
-
-    @include for-size(desktop-up){
-        left: 77px;
-        bottom: 11px;
-    }
-
+ } 
+ 
+ .program__btn {
+     margin: 0;
+     padding: 0;
+     font-family: Caveat Brush, sans-serif;
+     font-size: 18px;
+     line-height: 3.61;
+     color: $carousel-color;
+     text-align: start;
+     border: none;
+     background-color: inherit;
+     
+ 
+     @include for-size(desktop-up) {
+         display: none;
+     }
+ }
+ 
+  
+ 
+ .program__checker {
+     opacity: 0;
+     position: absolute;
+ 
+     & ~ .program__limited {
+        display: none;
+      }
+ 
+     
+     &:checked ~ .program__limited {
+         display: inherit;
+     } 
+       
+     & ~ .program__btn::before {
+         content: "Read more";
+     }
+         
+         
+     &:checked ~ .program__btn::before {
+         content: "Less";
+     }
     
-}
-
-@include for-size(desktop-up){
-    .hat {
-        width: 25px;
-        height: 23px;
+    
+ 
+     @include for-size (desktop-up){
+         display: none;
+     }
+ }
+ 
+   .program__container {
+     @include for-size (phone-plus-up) {
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: flex;
+         -webkit-box-pack: center;
+             -ms-flex-pack: center;
+                 justify-content: center;
+     }
+   }
+ 
+ 
+ .program__grid {
+     position: relative;
+     padding: 0;
+     margin: 0;
+     height: 423px;
+     margin-top: 0;
+     margin-bottom: 38px;
+ 
+ 
+ 
+     @include for-size (tablet-up) {
+         position: absolute;
+         right: 0px;
+         top: 0;
+         width: 300px;
+ 
+         margin-bottom: 0;
+         margin-top: 0;
+     }
+ 
+     @include for-size(desktop-up){
+         position: absolute;
+         right: 0px;
+         width: 392px;
+         height: 520px;
     }
-    .people{
-        width: 26px;
-        height: 23px;
-    }
-    .clock {
-        width: 25px;
-        height: 25px;
-    }
-    .chat {
-        width: 31px;
-        height: 21px;
-    }
-
-}
-
+ }
+ 
+ .program__grid-tail-first {
+     position: absolute;
+     margin: 0;
+     padding: 0;
+ 
+     list-style: none;
+     
+     border-radius: 50%;
+     background-color: $program-circle-color;
+     -webkit-box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
+             box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
+ 
+     &:hover,
+     &:focus {
+         opacity: 0.6;
+     }
+ 
+    
+ 
+     @include for-size(phone-only){
+         width: 142px;
+         height: 142px;
+ 
+ 
+         top: 60px;
+ 
+         & > a .program__grid-img {
+             position: absolute;
+             left: 32px;
+             top: -34px;
+         }
+     }
+ 
+     @include for-size(phone-plus-up){
+         width: 142px;
+         height: 142px;
+ 
+         margin-left: 15px;
+ 
+         top: 60px;
+ 
+         & > a .program__grid-img {
+             position: absolute;
+             left: 32px;
+             top: -34px;
+         }
+     }
+ 
+     
+     @include for-size(tablet-up){
+         width: 142px;
+         height: 142px;
+         margin: 0;
+ 
+ 
+         top: 33px;
+ 
+         & > a .program__grid-img {
+             position: absolute;
+             left: 32px;
+             top: -34px;
+         }
+     }    
+     
+     @include for-size(desktop-up){
+         width: 180px;
+         height: 180px;
+ 
+ 
+         top: 42px;
+ 
+         
+         & > a .program__grid-img {
+             width: 97px;
+             height: 107px;
+             position: absolute;
+             left: 41px;
+             top: -43px;
+         }
+     }
+ }
+ 
+ .program__grid-tail-second {
+     position: absolute;
+     margin: 0;
+     padding: 0;
+ 
+     right: 0;
+     list-style: none;
+     
+     border-radius: 50%;
+     background-color: $program-circle-color;
+     -webkit-box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
+             box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25); 
+ 
+     -webkit-transition-duration: 250ms; 
+ 
+          -o-transition-duration: 250ms; 
+ 
+             transition-duration: 250ms;
+     -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ 
+     &:hover,
+     &:focus {
+         opacity: 0.6;
+     }
+ 
+     
+     @include for-size(phone-only){
+         width: 142px;
+         height: 142px;
+ 
+ 
+         top: 83px;
+ 
+         & > a .program__grid-img {
+             position: absolute;
+             left: 38px;
+             top: -26px;
+         }
+     }
+ 
+     @include for-size(phone-plus-up){
+         width: 142px;
+         height: 142px;
+         margin-right: 15px;
+ 
+         top: 83px;
+ 
+         & > a .program__grid-img {
+             position: absolute;
+             left: 38px;
+             top: -26px;
+         }
+     }
+ 
+     @include for-size(tablet-up){
+         width: 142px;
+         height: 142px;
+         margin: 0;
+ 
+ 
+         top: 58px;
+ 
+         & > a .program__grid-img {
+             position: absolute;
+             left: 38px;
+             top: -26px;
+         }
+     }
+ 
+     @include for-size(desktop-up){
+         width: 180px;
+         height: 180px;
+ 
+ 
+         top: 98px;
+ 
+         & > a .program__grid-img {
+             width: 83px;
+             height: 92px;
+             position: absolute;
+             left: 48px;
+             top: -35px;
+         }
+     }
+ }
+ 
+ .program__grid-tail-third {
+     position: absolute;
+     margin: 0;
+     padding: 0;
+ 
+     bottom: 26px;
+     left: 0;
+     list-style: none;
+     
+     border-radius: 50%;
+     background-color: $program-circle-color;
+     -webkit-box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
+             box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25); 
+ 
+     -webkit-transition-duration: 250ms; 
+ 
+          -o-transition-duration: 250ms; 
+ 
+             transition-duration: 250ms;
+     -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ 
+     &:hover,
+     &:focus {
+         opacity: 0.6;
+     }
+ 
+     
+     @include for-size(phone-only){
+         width: 142px;
+         height: 142px;
+ 
+         & > a .program__grid-img {
+             position: absolute;
+             left: 36px;
+             top: -32px;
+         }
+     }
+ 
+ 
+     @include for-size(phone-plus-up){
+         width: 142px;
+         height: 142px;
+         margin-left: 15px;
+ 
+         & > a .program__grid-img {
+             position: absolute;
+             left: 36px;
+             top: -32px;
+         }
+     }
+ 
+ 
+     @include for-size(tablet-up){
+         width: 142px;
+         height: 142px;
+         margin: 0;
+ 
+ 
+         & > a .program__grid-img {
+             position: absolute;
+             left: 36px;
+             top: -32px;
+         }
+     }
+ 
+     @include for-size(desktop-up){
+         width: 180px;
+         height: 180px;
+ 
+         bottom: 56px;
+ 
+         & > a .program__grid-img {
+             width: 88px;
+             height: 97px;
+             position: absolute;
+             left: 46px;
+             top: -40px;
+         }
+     }
+ }
+ 
+ .program__grid-tail-fourth {
+     position: absolute;
+     margin: 0;
+     padding: 0;
+ 
+     bottom: 0;
+     right: 0;
+     list-style: none;
+     
+     border-radius: 50%;
+     background-color: $program-circle-color;
+     -webkit-box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
+             box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25); 
+ 
+     -webkit-transition-duration: 250ms; 
+ 
+          -o-transition-duration: 250ms; 
+ 
+             transition-duration: 250ms;
+     -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ 
+     &:hover,
+     &:focus {
+         opacity: 0.6;
+     }
+ 
+    
+ 
+     @include for-size(phone-only){
+         width: 142px;
+         height: 142px;
+ 
+         & > a .program__grid-img {
+             position: absolute;
+             left: 39px;
+             top: -28px;
+         }
+     }
+ 
+     @include for-size(phone-plus-up){
+         width: 142px;
+         height: 142px;
+         margin-right: 15px;
+ 
+         & > a .program__grid-img {
+             position: absolute;
+             left: 39px;
+             top: -28px;
+         }
+     }
+ 
+     @include for-size(tablet-up){
+         width: 142px;
+         height: 142px;
+         margin: 0;
+ 
+         & > a .program__grid-img {
+             position: absolute;
+             left: 39px;
+             top: -28px;
+         }
+     }
+ 
+     @include for-size(desktop-up){
+         width: 180px;
+         height: 180px;
+         bottom: 2px;
+ 
+         & > a .program__grid-img {
+             width: 83px;
+             height: 92px;
+             position: absolute;
+             left: 49px;
+             top: -35px;
+         }
+     }
+ }
+ 
+ .program_grid-item {
+     position: absolute;
+     bottom: 40px;
+     left: 10px;
+     right: 10px;
+ 
+     @include for-size (desktop-up){
+         bottom: 50px;
+     left: 10px;
+     right: 10px;
+     }
+ }
+ 
+ .program__grid-title {
+     font-family: Caveat Brush;
+     font-style: 400;
+     font-weight: 400;
+    
+     text-align: center;
+     color: $program-text-color;
+ 
+     @include for-size(phone-only){
+         font-size: 18px;
+         line-height: 1.28;
+     }
+ 
+     @include for-size(phone-plus-up){
+         font-size: 18px;
+         line-height: 1.28;
+     }
+ 
+      @include for-size(desktop-up){
+         font-size: 24px;
+         line-height: 1.25;
+     }
+ 
+ 
+ }
+ 
+ .program__grid-text {
+     -webkit-box-align: center;
+         -ms-flex-align: center;
+             align-items: center;
+     text-align: center;
+     margin-top: 13px;
+     color: $program-text-color;
+ 
+     @include for-size(phone-only){
+         font-size: 14px;
+         line-height: 1.21;
+     }
+ 
+     @include for-size(phone-plus-up){
+         font-size: 14px;
+         line-height: 1.21;
+     }
+ 
+      @include for-size(desktop-up){
+         font-size: 16px;
+         line-height: 1.25;
+     }
+ }
+ 
+ 
+ .program__grid-icon {
+     position: absolute;
+     fill: $program-icon-color;
+   
+ 
+     @include for-size(phone-only){
+         left: 60px;
+         bottom: 8px;
+     }
+ 
+     @include for-size(phone-plus-up){
+         left: 60px;
+         bottom: 8px;
+     }
+ 
+     @include for-size(desktop-up){
+         left: 77px;
+         bottom: 11px;
+     }
+ 
+     
+ }
+ 
+ @include for-size(desktop-up){
+     .hat {
+         width: 25px;
+         height: 23px;
+     }
+     .people{
+         width: 26px;
+         height: 23px;
+     }
+     .clock {
+         width: 25px;
+         height: 25px;
+     }
+     .chat {
+         width: 31px;
+         height: 21px;
+     }
+ 
+ }
+ 

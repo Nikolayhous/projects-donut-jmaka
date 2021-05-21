@@ -1,4 +1,5 @@
 
+
 .header__container {
     @include for-size(phone-plus-up) {
         width: 480px;
@@ -13,17 +14,27 @@
 
 .general {
     @include for-size(phone-plus-only) {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: flex-end;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
     }
     @include for-size(tablet-up) {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
 }
 
 .header__nav {
     @include for-size(desktop-up) {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
       }
 }
@@ -72,6 +83,8 @@
 
 .header__list {
     @include for-size(desktop-up) {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         padding-top: 52px;
       }
@@ -104,12 +117,5 @@
         color: $nav-menu-link;
     }
 }
-
-// .header__images {
-//     @include for-size(desktop-up) {
-//         width: 793px;
-//         height: 831px;
-//     }
-// }
 
 
