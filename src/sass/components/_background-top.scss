@@ -24,26 +24,12 @@
     }
   }
 
-    // @include for-size (desktop-up) {
-    //     background-image:
-    //                       url(../images/header/mobile/pic_donuts-min.png),
-    //                       url(../images/bg/mobille/bg@1x.png);
-    //     background-size:  130px, cover;
-    //     background-position: top left, top;
-    //     background-repeat:  no-repeat, no-repeat, no-repeat;
-    //     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) { 
-    //         background-image: 
-    //                           url(../images/header/mobile/pic_donuts@2x-min.png),
-    //                           url(../images/bg/mobille/bg@2x.png);
-    //         }
-    //     }
-
 
   @include for-size(desktop-up) {
     background-image: url(../images/header/desktop/spoon-min.png),
       url(../images/header/desktop/pic_donuts-min.png), url(../images/bg/desktop/bg@1x.png);
     background-size: 178px, 693px, cover;
-    background-position: top 166px left, top right, top;
+    background-position: top 166px left, top right, 100% 100%,top;
     background-repeat: no-repeat, no-repeat, repeat-x;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/header/desktop/spoon@2x-min.png),

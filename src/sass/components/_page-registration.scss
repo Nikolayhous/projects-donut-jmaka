@@ -4,10 +4,12 @@
   background-color: $registration-bg-color;
   box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
   border-radius: 150px 150px 0px 0px;
+
   @include for-size(phone-plus-only) {
-    max-width: 320px;
+    max-width: 290px;
     height: 510px;
   }
+
   @include for-size(tablet-up) {
     width: 664px;
 
@@ -87,7 +89,6 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-width: 265px;
 
   @include for-size(tablet-up) {
     flex-direction: row;
@@ -130,7 +131,11 @@
   border-bottom: 1px solid $input-border-color;
   outline: none;
   @include for-size(phone-plus-only) {
-    width: 265px;
+    width: 100%;
+  }
+  @include for-size(desktop-up) {
+    width: 100%;
+
   }
 }
 

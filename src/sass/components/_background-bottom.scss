@@ -16,8 +16,8 @@
                               url(../images/registration/tablet/confetti-min.png),
                               url(../images/footer/tablet/wheat_flour-min.png),
                               url(../images/bg_bottom/tablet/bg@1x.png);
-            background-size:   196px, 191px, 207px, contain;
-            background-position: top 625px left, bottom 405px right, bottom right, top;
+            background-size:   196px, 345px, 207px, contain;
+            background-position: top 578px left, top 605px right -32px, bottom right, top;
             background-repeat:  no-repeat, no-repeat, no-repeat, repeat-x;
             @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) { 
                 background-image: url(../images/registration/tablet/donut@2x.png),
@@ -26,6 +26,40 @@
                                   url(../images/bg_bottom/tablet/bg@2x.png);
                 }
             }
+
+            @media screen and (min-width: 950px) and (max-width: 1120.98px)  {
+ 
+                background-image: url(../images/registration/tablet/donut@1x.png),
+                url(../images/registration/tablet/confetti-min.png),
+                url(../images/footer/tablet/wheat_flour-min.png),
+                url(../images/bg_bottom/tablet/bg@1x.png);
+            background-size:   196px, 345px, 207px, contain;
+            background-position: top 578px left 90px, top 605px right 15px, bottom right, top;
+            background-repeat:  no-repeat, no-repeat, no-repeat, repeat-x;
+            @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) { 
+            background-image: url(../images/registration/tablet/donut@2x.png),
+                    url(../images/registration/tablet/confetti@2x-min.png),
+                    url(../images/footer/tablet/wheat_flour@2x-min.png),
+                    url(../images/bg_bottom/tablet/bg@2x.png);
+  }
+}
+
+@media screen and (min-width: 1121px) and (max-width: 1279px)  {
+ 
+    background-image: url(../images/registration/tablet/donut@1x.png),
+    url(../images/registration/tablet/confetti-min.png),
+    url(../images/footer/tablet/wheat_flour-min.png),
+    url(../images/bg_bottom/tablet/bg@1x.png);
+background-size:   196px, 345px, 207px, contain;
+background-position: top 578px left 125px, top 605px right 75px, bottom right, top;
+background-repeat:  no-repeat, no-repeat, no-repeat, repeat-x;
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) { 
+background-image: url(../images/registration/tablet/donut@2x.png),
+        url(../images/registration/tablet/confetti@2x-min.png),
+        url(../images/footer/tablet/wheat_flour@2x-min.png),
+        url(../images/bg_bottom/tablet/bg@2x.png);
+}
+}
     
             @include for-size (desktop-up) {
                 background-image: url(../images/registration/desktop/donut-min.png),
@@ -33,7 +67,7 @@
                                   url(../images/footer/desktop/Wheat_flour-min.png),
                                   url(../images/bg_bottom/desktop/bg@1x.png);
                 background-size:  196px, 544px, 362px, cover;
-                background-position: bottom 641px left 93px, bottom 290px right -55px, 100% 100%,top;;
+                background-position: bottom 641px left 93px, bottom 290px right -55px, 100% 100%,top;
                 background-repeat: no-repeat, no-repeat, no-repeat, repeat-x;
                 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) { 
                     background-image: url(../images/registration/desktop/donut@2x-min.png),
@@ -42,4 +76,53 @@
                                       url(../images/bg_bottom/desktop/bg@2x.png);
                     }
                 }
+
+                @media screen and (min-width: 1440px) {
+                    background-image: url(../images/registration/desktop/donut-min.png),
+                    url(../images/registration/desktop/confetti-min.png),
+                    url(../images/footer/desktop/Wheat_flour-min.png),
+                    url(../images/bg_bottom/desktop/bg@1x.png);
+  background-size:  196px, 544px, 362px, cover;
+  background-position: bottom 641px left 150px, bottom 290px right 35px, 100% 100%,top;
+  background-repeat: no-repeat, no-repeat, no-repeat, repeat-x;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) { 
+      background-image: url(../images/registration/desktop/donut@2x-min.png),
+                        url(../images/registration/desktop/confetti@2x-min.png),
+                        url(../images/footer/desktop/Wheat_flour@2x-min.png),
+                        url(../images/bg_bottom/desktop/bg@2x.png);
+      }
+  }
+
+  @media screen and (min-width: 1600px) {
+    background-image: url(../images/registration/desktop/donut-min.png),
+    url(../images/registration/desktop/confetti-min.png),
+    url(../images/footer/desktop/Wheat_flour-min.png),
+    url(../images/bg_bottom/desktop/bg@1x.png);
+background-size:  196px, 544px, 362px, cover;
+background-position: bottom 641px left 265px, bottom 290px right 120px, 100% 100%,top;
+background-repeat: no-repeat, no-repeat, no-repeat, repeat-x;
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) { 
+background-image: url(../images/registration/desktop/donut@2x-min.png),
+        url(../images/registration/desktop/confetti@2x-min.png),
+        url(../images/footer/desktop/Wheat_flour@2x-min.png),
+        url(../images/bg_bottom/desktop/bg@2x.png);
+}
+}
+
+@media screen and (min-width: 1920px) {
+    background-image: url(../images/registration/desktop/donut-min.png),
+    url(../images/registration/desktop/confetti-min.png),
+    url(../images/footer/desktop/Wheat_flour-min.png),
+    url(../images/bg_bottom/desktop/bg@1x.png);
+background-size:  196px, 544px, 362px, cover;
+background-position: bottom 641px left 415px, bottom 290px right 280px, 100% 100%,top;
+background-repeat: no-repeat, no-repeat, no-repeat, repeat-x;
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) { 
+background-image: url(../images/registration/desktop/donut@2x-min.png),
+        url(../images/registration/desktop/confetti@2x-min.png),
+        url(../images/footer/desktop/Wheat_flour@2x-min.png),
+        url(../images/bg_bottom/desktop/bg@2x.png);
+}
+}
+
     }                                   

@@ -65,7 +65,7 @@
   margin: auto;
 
   @include for-size(phone-plus-only) {
-    width: 265px;
+    max-width: 290px;
   }
   @include for-size(tablet-up) {
     width: 410px;
