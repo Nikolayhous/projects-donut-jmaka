@@ -77,6 +77,7 @@ background-image: url(../images/registration/tablet/donut@2x.png),
                     }
                 }
 
+
                 @media screen and (min-width: 1440px) {
                     background-image: url(../images/registration/desktop/donut-min.png),
                     url(../images/registration/desktop/confetti-min.png),
@@ -92,6 +93,21 @@ background-image: url(../images/registration/tablet/donut@2x.png),
                         url(../images/bg_bottom/desktop/bg@2x.png);
       }
   }
+
+  @media screen and (min-width: 1500px) {
+    background-image: url(../images/registration/desktop/donut-min.png),
+    url(../images/registration/desktop/confetti-min.png),
+    url(../images/footer/desktop/Wheat_flour-min.png),
+    url(../images/bg_bottom/desktop/bg@1x.png);
+background-size:  196px, 544px, 362px, 200px, bottom 290px right 85px, 100% 100%,top;
+background-repeat: no-repeat, no-repeat, no-repeat, repeat-x;
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) { 
+background-image: url(../images/registration/desktop/donut@2x-min.png),
+        url(../images/registration/desktop/confetti@2x-min.png),
+        url(../images/footer/desktop/Wheat_flour@2x-min.png),
+        url(../images/bg_bottom/desktop/bg@2x.png);
+}
+}
 
   @media screen and (min-width: 1600px) {
     background-image: url(../images/registration/desktop/donut-min.png),
